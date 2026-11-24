@@ -1,0 +1,11 @@
+{
+  "name": "garage77-server",
+  "version": "1.0.0",
+  "description": "Локальный сервер + база данных SQLite для сайта японского автосервиса ГАРАЖ 77",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

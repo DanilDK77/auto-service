@@ -1,0 +1,2851 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ГАРАЖ 77 · 車工房 — японский автосервис в Ангарске</title>
+<meta name="description" content="ГАРАЖ 77 — японский автосервис полного цикла в Ангарске: диагностика, ремонт, ТО. Онлайн-запись за 30 секунд, фотоотчёт в личном кабинете, гарантия 12 месяцев.">
+<meta name="theme-color" content="#0A0910">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23E2483D'/%3E%3Crect x='5' y='5' width='54' height='54' rx='9' fill='none' stroke='%23E8C36B' stroke-width='2'/%3E%3Ctext x='32' y='44' font-family='serif' font-size='30' font-weight='700' fill='%23FFF3E0' text-anchor='middle'%3E77%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/shippori-mincho@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/shippori-mincho@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/manrope@5/800.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5/700.css">
+<style>
+/* ============================ ТОКЕНЫ / ПАЛИТРА ============================ */
+:root{
+  --ink:#0A0910; --ink2:#100E18; --sumi:#171522; --sumi2:#1F1B2C;
+  --shu:#E2483D; --shu2:#FF6A52; --shu-deep:#8E1B14;
+  --sakura:#F4A7C0; --sakura2:#FFD3E2;
+  --kin:#E8C36B; --kin2:#FFE7A8;
+  --indigo:#2A4E9B; --azure:#4EA8FF;
+  --matcha:#63C08A; --amber:#F0A93B; --crimson:#FF4D5E;
+  --washi:#F3E8D5; --washi2:#E7D8BC; --paper:#FFFBF2; --sumi-ink:#241F2A;
+  --txt:#EFE6DA; --muted:#A79FB0; --line:rgba(232,195,107,.20);
+  --hdr:74px; --shadow:0 26px 70px rgba(0,0,0,.55);
+  --ff-jp:"Shippori Mincho","Noto Serif",serif;
+  --ff-d:"Noto Serif",Georgia,"Times New Roman",serif;
+  --ff-b:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ff-m:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 16px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--txt);font-family:var(--ff-b);font-size:16px;line-height:1.62;overflow-x:hidden;min-height:100vh}
+body.lock{overflow:hidden}
+img{max-width:100%;display:block}
+button,input,select,textarea{font-family:inherit}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;font-family:var(--ff-d);font-weight:700;line-height:1.12;letter-spacing:-.01em}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+figure{margin:0}
+::selection{background:rgba(226,72,61,.45);color:#fff}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none}
+/* ---- скроллбары в стиле сайта ---- */
+*{scrollbar-width:thin;scrollbar-color:var(--shu) rgba(232,195,107,.08)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:rgba(232,195,107,.07);border-left:1px solid rgba(232,195,107,.12)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--shu2),var(--shu) 55%,var(--shu-deep));border:2px solid rgba(10,9,16,.85);border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--kin2),var(--kin) 60%,#B98F32)}
+::-webkit-scrollbar-corner{background:transparent}
+.washi *{scrollbar-color:#B98F32 rgba(36,31,42,.10)}
+.washi ::-webkit-scrollbar-track{background:rgba(36,31,42,.08);border-left:1px solid rgba(36,31,42,.12)}
+.washi ::-webkit-scrollbar-thumb{border-color:rgba(243,232,213,.9)}
+/* ============================ ФОНОВЫЕ СЛОИ ============================ */
+.bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.bg-mesh{position:absolute;inset:-14%;
+  background:
+   radial-gradient(58% 48% at 80% 6%, rgba(226,72,61,.34), transparent 62%),
+   radial-gradient(52% 44% at 10% 20%, rgba(42,78,155,.34), transparent 66%),
+   radial-gradient(46% 40% at 46% 96%, rgba(232,195,107,.16), transparent 70%),
+   radial-gradient(38% 36% at 92% 74%, rgba(244,167,192,.16), transparent 72%);
+  animation:meshDrift 34s ease-in-out infinite alternate}
+@keyframes meshDrift{0%{transform:translate3d(-2%,-1%,0) scale(1)}100%{transform:translate3d(3%,2%,0) scale(1.08)}}
+.bg-clouds span{position:absolute;display:block;border-radius:50%;filter:blur(70px);opacity:.5}
+.bg-clouds span:nth-child(1){width:52vw;height:32vw;left:-12vw;top:38vh;background:rgba(42,78,155,.30);animation:cloudA 46s ease-in-out infinite alternate}
+.bg-clouds span:nth-child(2){width:44vw;height:26vw;right:-10vw;top:120vh;background:rgba(226,72,61,.22);animation:cloudA 38s ease-in-out infinite alternate-reverse}
+@keyframes cloudA{0%{transform:translate(0,0)}100%{transform:translate(8vw,-6vh)}}
+.bg-waves{position:absolute;inset:0;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke='%23E8C36B' stroke-width='1'%3E%3Cpath d='M2 20A18 18 0 0 1 38 20M8 20A12 12 0 0 1 32 20M14 20A6 6 0 0 1 26 20'/%3E%3Cpath d='M-18 40A18 18 0 0 1 18 40M-12 40A12 12 0 0 1 12 40M-6 40A6 6 0 0 1 6 40'/%3E%3Cpath d='M22 40A18 18 0 0 1 58 40M28 40A12 12 0 0 1 52 40M34 40A6 6 0 0 1 46 40'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:40px 40px}
+.bg-grain{position:absolute;inset:0;opacity:.20;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+
+/* ============================ КНОПКИ / ЧИПЫ ============================ */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:12px;border:1px solid transparent;
+  font-family:var(--ff-b);font-weight:800;font-size:14px;letter-spacing:.01em;cursor:pointer;overflow:hidden;
+  transition:transform .22s cubic-bezier(.2,.9,.25,1),box-shadow .22s,background .22s,color .22s,border-color .22s}
+.btn i{font-style:normal}
+.btn::after{content:"";position:absolute;top:0;left:-140%;width:60%;height:100%;transform:skewX(-22deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);transition:left .55s ease}
+.btn:hover::after{left:150%}
+.btn-primary{background:linear-gradient(135deg,var(--shu2),var(--shu) 46%,var(--shu-deep));color:#FFF6EC;border-color:rgba(232,195,107,.55);
+  box-shadow:0 12px 28px rgba(226,72,61,.30),inset 0 1px 0 rgba(255,255,255,.22)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(226,72,61,.44),inset 0 1px 0 rgba(255,255,255,.3)}
+.btn-ghost{background:rgba(255,255,255,.045);border-color:var(--line);color:var(--txt)}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--kin);color:var(--kin2);background:rgba(232,195,107,.10)}
+.btn-gold{background:linear-gradient(135deg,var(--kin2),var(--kin) 55%,#B98F32);color:#2A1D08;border-color:rgba(255,255,255,.35);box-shadow:0 10px 24px rgba(232,195,107,.24)}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-danger{background:rgba(255,77,94,.12);border-color:rgba(255,77,94,.5);color:#FF97A0}
+.btn-danger:hover{background:rgba(255,77,94,.22);color:#FFD5D9}
+.btn-sm{padding:9px 14px;font-size:12.5px;border-radius:10px}
+.btn-wide{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none!important;box-shadow:none}
+.btn:active{transform:translateY(0) scale(.985)}
+.washi .btn-ghost{background:rgba(36,31,42,.05);border-color:rgba(36,31,42,.2);color:#3A3242}
+.washi .btn-ghost:hover{background:rgba(226,72,61,.10);border-color:var(--shu);color:var(--shu-deep)}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:99px;border:1px solid var(--line);
+  background:rgba(255,255,255,.035);font-family:var(--ff-m);font-size:10.5px;font-weight:700;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.chip i{font-style:normal;font-family:var(--ff-jp);color:var(--kin);font-size:12px}
+button.chip{cursor:pointer;transition:.2s}
+button.chip:hover{border-color:var(--kin);color:var(--kin2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--matcha);box-shadow:0 0 0 3px rgba(99,192,138,.16);flex:none}
+.dot.warn{background:var(--amber);box-shadow:0 0 0 3px rgba(240,169,59,.16)}
+.dot.off{background:var(--crimson);box-shadow:0 0 0 3px rgba(255,77,94,.16)}
+.dot.live{animation:pulse 2.1s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.mono{font-family:var(--ff-m)}
+.tiny{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.jp{font-family:var(--ff-jp)}
+/* ============================ ШАПКА ============================ */
+.hdr{position:fixed;top:0;left:0;right:0;height:var(--hdr);z-index:60;display:flex;align-items:center;gap:16px;
+  padding:0 clamp(12px,2.6vw,30px);background:linear-gradient(180deg,rgba(10,9,16,.94),rgba(10,9,16,.70));
+  backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s,background .3s}
+.hdr.stuck{box-shadow:0 14px 40px rgba(0,0,0,.5);background:linear-gradient(180deg,rgba(10,9,16,.98),rgba(10,9,16,.88))}
+.hdr::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:var(--progress,0%);
+  background:linear-gradient(90deg,var(--kin),var(--shu),var(--sakura));box-shadow:0 0 14px rgba(226,72,61,.7);transition:width .12s linear}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.seal{position:relative;width:42px;height:42px;border-radius:10px;display:grid;place-items:center;flex:none;
+  background:linear-gradient(150deg,var(--shu2),var(--shu) 45%,var(--shu-deep));border:1.5px solid rgba(232,195,107,.75);
+  box-shadow:0 8px 20px rgba(226,72,61,.35),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .35s}
+.brand:hover .seal{transform:rotate(-6deg) scale(1.05)}
+.seal b{font-family:var(--ff-jp);font-size:20px;color:#FFF3E2;line-height:1;letter-spacing:.02em}
+.seal i{position:absolute;top:-6px;right:-6px;font-style:normal;font-family:var(--ff-jp);font-size:11px;color:#2A1D08;
+  background:var(--kin);border-radius:5px;padding:1px 3px;line-height:1.2;box-shadow:0 3px 8px rgba(0,0,0,.4)}
+.brand-txt b{display:block;font-family:var(--ff-d);font-size:17px;letter-spacing:.16em;line-height:1.1}
+.brand-txt em{display:block;font-style:normal;font-family:var(--ff-jp);font-size:9.5px;letter-spacing:.24em;color:var(--kin);opacity:.85}
+.nav{display:flex;align-items:center;gap:2px;margin-left:8px}
+.nav a{position:relative;display:flex;flex-direction:column;align-items:center;gap:1px;padding:7px 13px;border-radius:10px;
+  font-size:13.5px;font-weight:700;color:#C9C0CE;transition:.22s}
+.nav a i{font-style:normal;font-family:var(--ff-jp);font-size:9px;letter-spacing:.18em;color:var(--kin);opacity:.6;transition:.22s}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.05);transform:translateY(-1px)}
+.nav a:hover i{opacity:1}
+.nav a.active{color:#FFF3E2;background:rgba(226,72,61,.16)}
+.nav a.active i{opacity:1;color:var(--sakura)}
+.nav a.active::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg,transparent,var(--shu2),var(--kin),transparent)}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:9px}
+.btn-cab{padding:10px 16px;font-size:13px}
+.btn-cab .jp{font-family:var(--ff-jp);font-size:14px}
+.burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+  cursor:pointer;padding:0;place-items:center}
+.burger span{display:block;width:18px;height:2px;background:var(--kin);margin:3px auto;border-radius:2px;transition:.28s}
+.burger.on span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.mmenu{position:fixed;top:var(--hdr);left:0;right:0;z-index:59;background:linear-gradient(180deg,#141120,#0A0910);
+  border-bottom:1px solid var(--line);padding:14px clamp(14px,4vw,26px) 20px;transform:translateY(-120%);transition:transform .4s cubic-bezier(.2,.9,.25,1);
+  box-shadow:0 24px 50px rgba(0,0,0,.6);max-height:calc(100vh - var(--hdr));overflow:auto}
+.mmenu.open{transform:none}
+.mmenu a{display:flex;align-items:center;justify-content:space-between;padding:13px 6px;border-bottom:1px dashed rgba(232,195,107,.16);font-weight:700;font-size:17px}
+.mmenu a i{font-style:normal;font-family:var(--ff-jp);color:var(--kin);font-size:14px}
+.mmenu .mm-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.mmenu .mm-chips a{border:1px solid var(--line);padding:9px 14px;font-size:12.5px;border-radius:10px}
+/* ============================ ОБЩЕЕ ДЛЯ СЕКЦИЙ ============================ */
+main{position:relative;z-index:1}
+section{position:relative;padding:clamp(58px,7.5vw,104px) 0;scroll-margin-top:calc(var(--hdr) + 14px)}
+.wrap{width:min(1250px,92vw);margin-inline:auto;position:relative;z-index:1}
+.sec-head{max-width:760px;margin-bottom:clamp(26px,3.4vw,44px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-m);font-size:11px;font-weight:700;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--kin);margin-bottom:14px}
+.eyebrow i{font-style:normal;font-family:var(--ff-jp);font-size:15px;letter-spacing:.1em;color:var(--shu2)}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--shu),var(--kin))}
+.h2{font-size:clamp(28px,4.2vw,50px)}
+.h2 .accent{color:var(--shu2)}
+.lead{margin-top:14px;color:var(--muted);font-size:clamp(14.5px,1.35vw,16.5px);max-width:64ch}
+.washi{background:linear-gradient(180deg,#F7EEDD 0%,#EFE3CB 55%,#E7D8BC 100%);color:var(--sumi-ink);
+  border-top:3px solid var(--shu);border-bottom:3px solid var(--shu);box-shadow:inset 0 0 90px rgba(150,116,68,.20)}
+.washi::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23p)' opacity='.35'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply}
+.washi .wrap{z-index:2}
+.washi .eyebrow{color:#9A6B22}
+.washi .eyebrow i{color:var(--shu)}
+.washi .lead{color:#5C5064}
+.card{position:relative;background:linear-gradient(158deg,rgba(31,27,44,.92),rgba(14,12,21,.94));border:1px solid var(--line);
+  border-radius:18px;overflow:hidden}
+.card-head{display:flex;align-items:center;gap:12px;padding:18px 20px;border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(226,72,61,.14),transparent)}
+.card-head h3{font-size:19px}
+.kanji-badge{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;flex:none;font-family:var(--ff-jp);font-size:15px;
+  background:linear-gradient(150deg,var(--shu),var(--shu-deep));color:#FFF3E2;border:1px solid rgba(232,195,107,.6)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.8,.25,1),transform .75s cubic-bezier(.2,.8,.25,1);transition-delay:calc(var(--i,0)*70ms)}
+.reveal.in{opacity:1;transform:none}
+/* ============================ ГЕРОЙ ============================ */
+.hero{padding-top:calc(var(--hdr) + clamp(30px,5vw,64px));padding-bottom:0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(24px,3.4vw,52px);align-items:center}
+.hero-copy{position:relative;padding-left:clamp(0px,2.4vw,42px)}
+.tategaki{position:absolute;left:-6px;top:6px;writing-mode:vertical-rl;font-family:var(--ff-jp);font-size:15px;letter-spacing:.42em;
+  color:var(--kin);opacity:.55;height:230px}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:8px 15px;border-radius:99px;border:1px solid rgba(99,192,138,.35);
+  background:rgba(99,192,138,.10);font-size:12.5px;font-weight:700;color:#BFE9CE}
+.pill.closed{border-color:rgba(240,169,59,.4);background:rgba(240,169,59,.1);color:#F6D9A8}
+.hero-title{display:flex;align-items:baseline;gap:clamp(10px,1.6vw,22px);margin:18px 0 4px;font-size:clamp(52px,8.6vw,112px);letter-spacing:.02em}
+.hero-title .l1{color:#FFF6EA;text-shadow:0 8px 40px rgba(0,0,0,.6)}
+.hero-title .l2{font-family:var(--ff-jp);background:linear-gradient(160deg,var(--kin2),var(--kin) 40%,var(--shu2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 18px rgba(226,72,61,.45))}
+.brush{display:block;width:min(420px,86%);height:16px;margin-bottom:12px}
+.hero-jp{font-family:var(--ff-jp);font-size:clamp(15px,1.7vw,20px);letter-spacing:.26em;color:var(--sakura);margin-bottom:12px}
+.hero-sub{color:#C4BBC9;font-size:clamp(14.5px,1.4vw,17px);max-width:54ch}
+.hero-sub b{color:#F3E9DC;font-weight:800}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 22px}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap}
+.hero-chips li{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border-radius:11px;border:1px solid var(--line);
+  background:rgba(255,255,255,.03);font-size:12.5px;font-weight:700;color:#D8D0DC}
+.hero-chips li b{font-family:var(--ff-jp);color:var(--kin);font-weight:400;font-size:14px}
+.hero-art{position:relative;will-change:transform}
+.scene-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);
+  background:radial-gradient(120% 100% at 50% 0%,#1B1830,#0A0910 70%);box-shadow:var(--shadow)}
+.scene-frame::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,transparent 62%,rgba(10,9,16,.5));border-radius:20px}
+#scene{display:block;width:100%;height:auto}
+#scene .lantern{animation:sway 6.5s ease-in-out infinite}
+#scene .lantern.l2{animation-duration:8s;animation-delay:-2.4s}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.dragon{animation:dragonFloat 13s ease-in-out infinite}
+@keyframes dragonFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-7px,-9px)}}
+.scene-tag{position:absolute;left:14px;top:14px;z-index:2;font-family:var(--ff-m);font-size:10px;letter-spacing:.2em;color:var(--kin);
+  padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(10,9,16,.6);backdrop-filter:blur(6px)}
+.live{margin-top:14px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(20,17,30,.9),rgba(10,9,16,.9));padding:13px 15px}
+.live-head{display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:var(--ff-m);font-size:10.5px;letter-spacing:.14em;color:var(--muted)}
+.live-dot{color:var(--matcha);animation:pulse 2s ease-in-out infinite}
+.live-line{margin-top:8px;font-family:var(--ff-m);font-size:12.5px;color:#E7DCC8;min-height:20px;transition:opacity .35s}
+.live-bar{margin-top:9px;height:4px;border-radius:3px;background:rgba(232,195,107,.12);overflow:hidden}
+.live-bar i{display:block;height:100%;width:30%;border-radius:3px;background:linear-gradient(90deg,var(--shu),var(--kin));transition:width 1.1s cubic-bezier(.3,.9,.3,1)}
+.ticker{margin-top:clamp(30px,4vw,56px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(226,72,61,.14),rgba(42,78,155,.12),rgba(232,195,107,.12));overflow:hidden;padding:11px 0}
+.ticker-track{display:flex;gap:38px;width:max-content;animation:tick 34s linear infinite;font-family:var(--ff-m);font-size:12px;letter-spacing:.12em;color:#E4D9C4}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker-track span{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.ticker-track b{color:var(--kin);font-family:var(--ff-jp);font-weight:400}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* ============================ СТАТИСТИКА ============================ */
+.stats-sec{padding:clamp(34px,4vw,54px) 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{position:relative;padding:22px 20px;border-radius:16px;border:1px solid var(--line);overflow:hidden;
+  background:linear-gradient(155deg,rgba(31,27,44,.85),rgba(12,10,19,.9))}
+.stat::before{content:attr(data-kanji);position:absolute;right:8px;bottom:-16px;font-family:var(--ff-jp);font-size:78px;color:rgba(232,195,107,.07);line-height:1}
+.stat b{display:block;font-family:var(--ff-d);font-size:clamp(28px,3.4vw,42px);color:#FFF3E2;line-height:1.05}
+.stat b em{font-style:normal;color:var(--shu2)}
+.stat > span{display:block;margin-top:6px;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.stat::after{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:linear-gradient(180deg,var(--shu),var(--kin))}
+/* ============================ УСЛУГИ ============================ */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc-card{position:relative;padding:22px 22px 18px;border-radius:18px;border:1px solid var(--line);overflow:hidden;
+  background:linear-gradient(158deg,rgba(31,27,44,.92),rgba(13,11,20,.94));transition:transform .3s cubic-bezier(.2,.9,.25,1),border-color .3s,box-shadow .3s}
+.svc-card::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .35s;pointer-events:none;
+  background:radial-gradient(220px 220px at var(--mx,50%) var(--my,0%),rgba(226,72,61,.20),transparent 70%)}
+.svc-card:hover{transform:translateY(-6px);border-color:rgba(232,195,107,.55);box-shadow:0 26px 50px rgba(0,0,0,.5)}
+.svc-card:hover::before{opacity:1}
+.svc-card::after{content:"";position:absolute;right:0;top:0;width:76px;height:76px;pointer-events:none;
+  background:linear-gradient(225deg,rgba(232,195,107,.16),transparent 62%)}
+.svc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.crest{width:62px;height:62px;flex:none;transition:transform .5s cubic-bezier(.2,.9,.25,1)}
+.svc-card:hover .crest{transform:rotate(12deg)}
+.svc-tag{font-family:var(--ff-m);font-size:11px;letter-spacing:.2em;color:var(--kin);opacity:.75;padding-top:6px}
+.svc-name{font-size:20px;margin-bottom:8px;color:#FFF3E2}
+.svc-name em{display:block;font-style:normal;font-family:var(--ff-jp);font-size:11px;letter-spacing:.28em;color:var(--sakura);opacity:.8;margin-top:5px}
+.svc-desc{font-size:13.6px;color:#ABA2B4;min-height:66px}
+.svc-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:14px;border-top:1px dashed rgba(232,195,107,.2)}
+.svc-from{font-family:var(--ff-m);font-size:12px;color:var(--muted)}
+.svc-from b{display:block;font-family:var(--ff-d);font-size:19px;color:var(--kin2)}
+.svc-actions{display:flex;gap:7px}
+
+/* ============================ ПРАЙС ============================ */
+.ptools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.search{position:relative;display:flex;align-items:center;gap:9px;flex:1 1 260px;min-width:220px;padding:0 12px;border-radius:12px;
+  background:rgba(255,255,255,.66);border:1px solid rgba(36,31,42,.18);transition:.22s}
+.search:focus-within{border-color:var(--shu);box-shadow:0 0 0 3px rgba(226,72,61,.14);background:#fff}
+.search i{font-style:normal;font-family:var(--ff-jp);color:var(--shu);font-size:15px}
+.search input{flex:1;border:0;background:transparent;padding:12px 0;font-size:14.5px;color:var(--sumi-ink);outline:none;min-width:0}
+.search input::placeholder{color:#9A8B76}
+.search button{border:0;background:transparent;color:#8A7657;cursor:pointer;font-size:14px;padding:4px}
+.cats{display:flex;gap:7px;flex-wrap:wrap}
+.cat{padding:8px 13px;border-radius:99px;border:1px solid rgba(36,31,42,.18);background:rgba(255,255,255,.5);
+  font-size:12.5px;font-weight:700;color:#4A4152;cursor:pointer;transition:.2s;white-space:nowrap}
+.cat:hover{border-color:var(--shu);color:var(--shu-deep)}
+.cat.on{background:linear-gradient(135deg,var(--shu2),var(--shu));color:#FFF6EC;border-color:var(--shu-deep);box-shadow:0 6px 16px rgba(226,72,61,.28)}
+.table-wrap{max-height:600px;overflow:auto;border-radius:16px;border:1px solid rgba(36,31,42,.16);background:rgba(255,253,247,.72);box-shadow:0 16px 40px rgba(120,90,50,.14)}
+.ptable{width:100%;border-collapse:separate;border-spacing:0}
+.ptable th{position:sticky;top:0;z-index:2;background:linear-gradient(180deg,#F3E7D2,#EDDFC5);text-align:left;
+  font-family:var(--ff-m);font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#7A6444;
+  padding:13px 16px;border-bottom:2px solid rgba(36,31,42,.18);cursor:pointer;user-select:none;white-space:nowrap}
+.ptable th:hover{color:var(--shu-deep)}
+.ptable th span{opacity:.4;margin-left:5px}
+.ptable th.sorted span{opacity:1;color:var(--shu)}
+.ptable td{padding:13px 16px;border-bottom:1px solid rgba(36,31,42,.09);font-size:14.2px;vertical-align:middle}
+.ptable tbody tr{transition:background .18s}
+.ptable tbody tr:hover{background:rgba(226,72,61,.07)}
+.ptable tbody tr:last-child td{border-bottom:0}
+.c-name{font-weight:700;color:#2C2534}
+.cat-badge{display:inline-block;padding:4px 10px;border-radius:99px;font-size:11.5px;font-weight:700;border:1px solid;white-space:nowrap}
+.c-time,.c-price{font-family:var(--ff-m);white-space:nowrap}
+.c-price{font-weight:700;font-size:15px;color:#2C2534}
+.c-act{text-align:right}
+.pfoot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;color:#6B5E70}
+.pfoot .note{max-width:60ch}
+.empty{padding:44px 20px;text-align:center;color:#6B5E70}
+.empty b{display:block;font-family:var(--ff-jp);font-size:28px;color:var(--shu);margin-bottom:8px}
+/* ============================ ЗАПИСЬ ============================ */
+.book-dragon{position:absolute;right:-40px;top:24px;width:min(640px,72%);opacity:.07;pointer-events:none;z-index:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;margin-bottom:14px}
+.field.full{grid-column:1/-1}
+.field label{display:flex;align-items:center;gap:7px;font-family:var(--ff-m);font-size:10.5px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field label i{font-style:normal;font-family:var(--ff-jp);font-size:12px;color:var(--kin);letter-spacing:.1em}
+.field label b{color:var(--shu2)}
+.inp{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(6,5,10,.55);color:var(--txt);
+  font-size:15px;font-weight:600;transition:.2s;outline:none}
+.inp::placeholder{color:#6E6678;font-weight:500}
+.inp:focus{border-color:var(--shu);box-shadow:0 0 0 3px rgba(226,72,61,.18);background:rgba(6,5,10,.8)}
+select.inp{appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M 1 1l5 5 5-5' fill='none' stroke='%23E8C36B' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+select.inp option{background:#141120;color:#EFE6DA}
+textarea.inp{resize:vertical;min-height:88px;line-height:1.5}
+input[type=date].inp{cursor:pointer}
+input[type=date].inp::-webkit-calendar-picker-indicator{filter:invert(78%) sepia(38%) saturate(600%) hue-rotate(340deg);cursor:pointer}
+.field.bad .inp{border-color:var(--crimson);box-shadow:0 0 0 3px rgba(255,77,94,.15);animation:shake .32s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.err{display:block;min-height:15px;margin-top:5px;font-size:11.5px;font-weight:700;color:#FF97A0}
+.counter{align-self:flex-end;font-family:var(--ff-m);font-size:10.5px;color:var(--muted);margin-top:5px}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:8px}
+.slot{padding:11px 6px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#DCD3E0;
+  font-family:var(--ff-m);font-size:13px;font-weight:700;cursor:pointer;transition:.18s;position:relative}
+.slot:hover:not(:disabled){border-color:var(--kin);color:var(--kin2);transform:translateY(-2px)}
+.slot.sel{background:linear-gradient(135deg,var(--shu2),var(--shu));border-color:var(--kin);color:#FFF6EC;box-shadow:0 8px 20px rgba(226,72,61,.35)}
+.slot:disabled{cursor:not-allowed;color:#6A6274;opacity:.65;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,.03) 0 6px,transparent 6px 12px)}
+.slot:disabled::after{content:"✕";position:absolute;right:5px;top:3px;font-size:9px;color:var(--crimson);opacity:.8}
+.hint{font-size:12.5px;color:var(--muted);font-style:italic}
+.sk{height:40px;border-radius:10px;background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.10),rgba(255,255,255,.04));
+  background-size:200% 100%;animation:sk 1.2s linear infinite}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.consent{margin-top:11px;text-align:center;font-size:11.5px;color:var(--muted)}
+/* ---- блок входа в форму ---- */
+.book-open{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;position:relative;z-index:1;
+  padding:24px clamp(18px,2.4vw,28px);border-radius:20px;border:1px solid rgba(232,195,107,.35);
+  background:linear-gradient(120deg,rgba(226,72,61,.22),rgba(42,78,155,.16) 55%,rgba(232,195,107,.12));box-shadow:var(--shadow)}
+.bo-copy{display:flex;align-items:center;gap:16px;min-width:min(100%,320px)}
+.bo-seal{width:56px;height:56px;flex:none;display:grid;place-items:center;border-radius:16px;font-family:var(--ff-jp);font-size:23px;
+  color:#FFF3E2;background:linear-gradient(150deg,var(--shu),var(--shu-deep));border:1.5px solid rgba(232,195,107,.7);box-shadow:0 10px 26px rgba(226,72,61,.34)}
+.bo-copy h3{font-size:20px;color:#FFF3E2;margin-bottom:6px}
+.bo-copy p{font-size:13.8px;color:#D9CFC2;max-width:52ch}
+.bo-actions{display:flex;flex-direction:column;align-items:flex-end;gap:9px}
+.bo-actions .tiny{font-family:var(--ff-m);font-size:11px;color:var(--muted);letter-spacing:.04em}
+/* ---- модалка формы записи ---- */
+.book-modal .modal-body{padding:18px 20px 20px}
+.book-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-top:4px;padding:14px 16px;border-radius:14px;border:1px solid rgba(232,195,107,.32);
+  background:linear-gradient(135deg,rgba(226,72,61,.20),rgba(232,195,107,.10))}
+.book-sum{display:grid;grid-template-columns:auto auto;align-items:baseline;gap:2px 14px;min-width:0}
+.book-sum span{grid-column:1/-1;font-family:var(--ff-m);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--kin)}
+.book-sum b{font-family:var(--ff-d);font-size:27px;color:#FFF3E2;line-height:1.1}
+.book-sum i{grid-column:1/-1;font-style:normal;font-size:13px;font-weight:700;color:#F1E7D8}
+.book-sum em{grid-column:1/-1;font-style:normal;font-family:var(--ff-m);font-size:11px;color:var(--muted)}
+.book-sum u{text-decoration:none;font-family:var(--ff-m);font-size:11px;color:var(--matcha)}
+.book-foot .btn{flex:none}
+@media(max-width:760px){
+  .bo-actions{align-items:stretch;width:100%}
+  .bo-actions .btn,.book-foot .btn{width:100%}
+  .book-foot{align-items:stretch}
+}
+/* ============================ ЭТАПЫ ============================ */
+.hanko{position:fixed;left:50%;top:50%;z-index:99;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;
+  display:none;place-items:center;font-family:var(--ff-jp);font-size:34px;letter-spacing:.05em;
+  color:rgba(255,120,105,.95);border:4px solid rgba(226,72,61,.85);background:rgba(10,9,16,.62);
+  pointer-events:none;opacity:0;transform:rotate(-12deg) scale(2.4)}
+.hanko.stamp{display:grid;animation:stamp .9s cubic-bezier(.2,1.4,.4,1) forwards}
+@keyframes stamp{0%{opacity:0;transform:rotate(-12deg) scale(2.4)}30%{opacity:1;transform:rotate(-12deg) scale(1)}100%{opacity:.92;transform:rotate(-12deg) scale(1)}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+.steps::before{content:"";position:absolute;left:6%;right:6%;top:44px;height:2px;
+  background:linear-gradient(90deg,transparent,rgba(232,195,107,.4),rgba(226,72,61,.5),rgba(232,195,107,.4),transparent)}
+.steps-art{position:absolute;right:0;top:-26px;width:132px;height:132px}
+.step{position:relative;padding:22px 20px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(28,24,40,.9),rgba(11,9,17,.92))}
+.step-num{position:relative;z-index:2;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:14px;
+  font-family:var(--ff-jp);font-size:22px;color:#FFF3E2;background:linear-gradient(150deg,var(--shu2),var(--shu-deep));
+  border:1px solid rgba(232,195,107,.6);box-shadow:0 10px 22px rgba(226,72,61,.3)}
+.step h4{font-size:17px;margin-bottom:8px;color:#FFF3E2}
+.step p{font-size:13.4px;color:#A79FB0}
+.step em{position:absolute;right:14px;top:12px;font-style:normal;font-family:var(--ff-m);font-size:11px;color:rgba(232,195,107,.5)}
+/* ============================ ОТЗЫВЫ ============================ */
+.rev-top{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;margin-bottom:26px;padding:20px 24px;border-radius:18px;
+  background:linear-gradient(120deg,rgba(255,255,255,.7),rgba(255,255,255,.35));border:1px solid rgba(36,31,42,.14)}
+.rev-score{text-align:center}
+.rev-score b{display:block;font-family:var(--ff-d);font-size:56px;line-height:1;color:var(--shu-deep)}
+.rev-score .stars{color:#D9A227;font-size:17px;letter-spacing:2px}
+.rev-score > span{display:block;font-size:12px;color:#6B5E70;margin-top:4px}
+.rev-bars{display:grid;gap:6px;min-width:0}
+.rev-bar{display:grid;grid-template-columns:52px 1fr 42px;gap:10px;align-items:center;font-size:12px;color:#5C5064}
+.rev-bar .track{height:8px;border-radius:5px;background:rgba(36,31,42,.12);overflow:hidden}
+.rev-bar .track i{display:block;height:100%;width:0;border-radius:5px;transition:width 1.1s cubic-bezier(.2,.9,.25,1)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev-card{position:relative;padding:22px 20px 18px;border-radius:14px;background:linear-gradient(180deg,#FFFCF4,#F6EDDB);
+  border:1px solid rgba(36,31,42,.14);box-shadow:0 12px 28px rgba(120,90,50,.14);transition:transform .3s cubic-bezier(.2,.9,.25,1),box-shadow .3s}
+.rev-card:nth-child(3n+1){transform:rotate(-.5deg)}
+.rev-card:nth-child(3n+3){transform:rotate(.5deg)}
+.rev-card:hover{transform:rotate(0) translateY(-5px);box-shadow:0 22px 44px rgba(120,90,50,.22)}
+.rev-card::before{content:"「";position:absolute;left:12px;top:2px;font-family:var(--ff-jp);font-size:30px;color:rgba(226,72,61,.25)}
+.rev-stars{color:#D9A227;letter-spacing:2px;font-size:14px;margin-bottom:10px;padding-left:22px}
+.rev-text{font-size:13.8px;color:#3E3548;min-height:96px}
+.rev-who{display:flex;align-items:center;gap:11px;margin-top:16px;padding-top:13px;border-top:1px dashed rgba(36,31,42,.18)}
+.rev-ava{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-family:var(--ff-jp);font-size:16px;color:#FFF3E2;flex:none}
+.rev-who .info{min-width:0}
+.rev-who .info b{display:block;font-size:14px;color:#2C2534}
+.rev-who .info span{display:block;font-size:11.5px;color:#6B5E70}
+.rev-date{margin-left:auto;font-family:var(--ff-m);font-size:10.5px;color:#8A7657;white-space:nowrap}
+.rev-stamp{position:absolute;right:14px;bottom:12px;width:40px;height:40px;border-radius:50%;border:2px solid rgba(226,72,61,.45);
+  display:grid;place-items:center;font-family:var(--ff-jp);font-size:14px;color:rgba(226,72,61,.6);transform:rotate(-10deg);opacity:.75}
+/* ============================ КОНТАКТЫ ============================ */
+.ct-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;align-items:start}
+.ct-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ct-card{padding:20px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(158deg,rgba(31,27,44,.9),rgba(12,10,19,.92));transition:.28s}
+.ct-card:hover{border-color:rgba(232,195,107,.5);transform:translateY(-4px)}
+.ct-card .k{display:flex;align-items:center;gap:9px;font-family:var(--ff-m);font-size:10.5px;letter-spacing:.2em;color:var(--kin);margin-bottom:10px}
+.ct-card .k i{font-style:normal;font-family:var(--ff-jp);font-size:15px;color:var(--shu2)}
+.ct-card b{display:block;font-size:16.5px;color:#FFF3E2;font-weight:800;line-height:1.35}
+.ct-card p{margin-top:7px;font-size:12.8px;color:var(--muted)}
+.ct-card a:hover{color:var(--kin2)}
+.ct-cta{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:18px 20px;border-radius:16px;
+  background:linear-gradient(120deg,rgba(226,72,61,.24),rgba(42,78,155,.18));border:1px solid rgba(232,195,107,.35)}
+.ct-cta p{font-size:14px;color:#EDE2D2}
+.map-frame{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#F3E8D5;box-shadow:var(--shadow)}
+.map-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;background:linear-gradient(90deg,#1B1826,#141120);border-bottom:1px solid var(--line)}
+.map-head b{font-family:var(--ff-m);font-size:11px;letter-spacing:.2em;color:var(--kin)}
+.map-head i{font-style:normal;font-family:var(--ff-jp);color:var(--sakura);font-size:14px}
+.map-body{position:relative;background:#F7EEDD;min-height:320px}
+.map-body iframe{display:block;width:100%;height:clamp(320px,46vh,460px);border:0}
+.map-badge{position:absolute;left:14px;top:14px;z-index:2;padding:6px 10px;border-radius:10px;
+  font-family:var(--ff-jp);font-size:12px;letter-spacing:.18em;color:#FFF3E2;background:rgba(20,17,30,.78);
+  border:1px solid rgba(232,195,107,.5);pointer-events:none}
+.map-actions{display:flex;gap:9px;flex-wrap:wrap;padding:12px 16px;background:#141120;border-top:1px solid var(--line)}
+/* ============================ ПОДВАЛ ============================ */
+.ftr{position:relative;z-index:1;padding:52px 0 26px;background:linear-gradient(180deg,#0B0A12,#07060C);border-top:1px solid var(--line);overflow:hidden}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px;padding-bottom:26px;border-bottom:1px dashed rgba(232,195,107,.18)}
+.ftr h5{font-family:var(--ff-m);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--kin);margin:0 0 12px}
+.ftr a{display:block;padding:5px 0;font-size:13.5px;color:#B7AEC2;transition:.2s}
+.ftr a:hover{color:var(--kin2);transform:translateX(3px)}
+.ftr .brand{display:flex;padding:0}
+.ftr-brand p{margin-top:12px;font-size:13px;color:var(--muted);max-width:42ch}
+.ftr-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:18px;font-size:11.5px;color:#7E7689;font-family:var(--ff-m)}
+.ftr-dragon{position:absolute;right:-40px;top:-30px;width:420px;opacity:.06;pointer-events:none}
+/* ============================ ОВЕРЛЕИ ============================ */
+.scrim{position:fixed;inset:0;z-index:88;background:rgba(5,4,9,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:0;pointer-events:none;transition:opacity .3s}
+.scrim.on{opacity:1;pointer-events:auto}
+.overlay{position:fixed;inset:0;z-index:96;display:none;align-items:center;justify-content:center;padding:18px}
+.overlay.open{display:flex}
+.overlay .scrim-in{position:absolute;inset:0;background:rgba(5,4,9,.74);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);animation:fade .28s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{position:relative;width:min(560px,100%);max-height:min(90vh,940px);overflow:auto;border-radius:20px;border:1px solid var(--line);
+  background:linear-gradient(172deg,#1C1828,#0B0A12);box-shadow:var(--shadow);animation:pop .34s cubic-bezier(.2,.9,.25,1)}
+.modal.wide{width:min(880px,100%)}
+@keyframes pop{from{opacity:0;transform:translateY(22px) scale(.97)}to{opacity:1;transform:none}}
+.noren{display:flex;gap:3px;height:36px;padding:0 3px}
+.noren span{flex:1;display:grid;place-items:center;font-family:var(--ff-jp);font-size:15px;color:#FFF1E0;border-radius:0 0 6px 6px;
+  background:linear-gradient(180deg,var(--shu),var(--shu-deep));box-shadow:inset 0 -2px 0 rgba(232,195,107,.4)}
+.modal-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.modal-head h3{font-size:19px}
+.modal-head .sub{font-family:var(--ff-m);font-size:10.5px;color:var(--muted);letter-spacing:.14em}
+.x{margin-left:auto;width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+  color:#CFC6D6;cursor:pointer;font-size:15px;line-height:1;transition:.2s;flex:none}
+.x:hover{background:rgba(226,72,61,.2);border-color:var(--shu);color:#fff;transform:rotate(90deg)}
+.modal-body{padding:20px}
+.tabs{display:flex;gap:6px;padding:6px;border-radius:12px;background:rgba(6,5,10,.6);border:1px solid var(--line);margin-bottom:18px}
+.tabs button{flex:1;padding:10px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-weight:800;font-size:13.5px;cursor:pointer;transition:.22s}
+.tabs button.on{background:linear-gradient(135deg,var(--shu2),var(--shu));color:#FFF6EC;box-shadow:0 8px 18px rgba(226,72,61,.3)}
+.demo-box{margin-top:16px;padding:13px 14px;border-radius:12px;border:1px dashed rgba(232,195,107,.35);background:rgba(232,195,107,.06)}
+.demo-box p{font-size:11.5px;color:var(--muted);margin-bottom:8px;font-family:var(--ff-m);letter-spacing:.06em}
+.demo-cred{display:flex;align-items:center;gap:8px;width:100%;padding:8px 10px;margin-top:6px;border-radius:9px;border:1px solid var(--line);
+  background:rgba(255,255,255,.03);color:#D9D0E0;font-family:var(--ff-m);font-size:11.5px;cursor:pointer;transition:.2s;text-align:left}
+.demo-cred:hover{border-color:var(--kin);color:var(--kin2);transform:translateX(3px)}
+.demo-cred b{color:var(--sakura);font-weight:700}
+.form-msg{padding:11px 13px;border-radius:11px;font-size:13px;font-weight:600;margin-bottom:14px;display:none}
+.form-msg.on{display:block;animation:fade .25s}
+.form-msg.bad{background:rgba(255,77,94,.12);border:1px solid rgba(255,77,94,.4);color:#FFA8B0}
+.form-msg.good{background:rgba(99,192,138,.12);border:1px solid rgba(99,192,138,.4);color:#B6E9C9}
+/* ---- кабинет ---- */
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(620px,100%);z-index:95;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,#151221,#08070E);border-left:1px solid var(--line);box-shadow:-30px 0 70px rgba(0,0,0,.6);
+  transform:translateX(103%);transition:transform .42s cubic-bezier(.2,.9,.25,1)}
+.drawer.open{transform:none}
+.drawer-head{padding:16px 18px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(226,72,61,.16),transparent)}
+.drawer-head .row{display:flex;align-items:center;gap:12px}
+.drawer-head h3{font-size:18px}
+.userchip{display:flex;align-items:center;gap:10px;margin-top:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.userchip:empty{display:none}
+.userchip .ava{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-family:var(--ff-jp);font-size:15px;color:#FFF3E2;
+  background:linear-gradient(150deg,var(--indigo),#16233F);border:1px solid rgba(232,195,107,.4);flex:none}
+.userchip .info{min-width:0}
+.userchip .info b{display:block;font-size:14px;color:#F2E8DA}
+.userchip .info span{display:block;font-family:var(--ff-m);font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis}
+.userchip .role{margin-left:auto;padding:4px 9px;border-radius:99px;font-family:var(--ff-m);font-size:10px;letter-spacing:.1em;white-space:nowrap;
+  border:1px solid rgba(232,195,107,.45);color:var(--kin2);background:rgba(232,195,107,.1)}
+.userchip .role.admin{border-color:rgba(226,72,61,.6);color:#FFC0B6;background:rgba(226,72,61,.16)}
+.drawer-tools{padding:12px 18px;border-bottom:1px solid var(--line);display:grid;gap:10px}
+.tool-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.dsearch{flex:1 1 180px;display:flex;align-items:center;gap:8px;padding:0 11px;border-radius:11px;border:1px solid var(--line);background:rgba(6,5,10,.55);min-width:0}
+.dsearch input{flex:1;border:0;background:transparent;color:var(--txt);padding:10px 0;font-size:13.5px;outline:none;min-width:0}
+.dsearch i{font-style:normal;font-family:var(--ff-jp);color:var(--kin)}
+.mini-select{padding:9px 30px 9px 11px;border-radius:10px;border:1px solid var(--line);background:rgba(6,5,10,.55);color:var(--txt);font-size:12.5px;font-weight:700;
+  appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23E8C36B' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 10px center}
+.mini-select option{background:#141120}
+.fchips{display:flex;gap:6px;flex-wrap:wrap}
+.fchip{padding:6px 11px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#BDB4C8;
+  font-size:11.5px;font-weight:700;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.fchip:hover{border-color:var(--kin);color:var(--kin2)}
+.fchip.on{background:rgba(226,72,61,.2);border-color:var(--shu);color:#FFD9D2}
+.fchip u{text-decoration:none;font-family:var(--ff-m);font-size:10px;opacity:.7}
+.bulkbar{display:none;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 18px;background:rgba(226,72,61,.14);border-bottom:1px solid rgba(226,72,61,.35)}
+.bulkbar.on{display:flex}
+.bulkbar b{font-family:var(--ff-m);font-size:11.5px;color:#FFD9D2}
+.drawer-body{flex:1;overflow:auto;padding:14px 18px 26px}
+.o-list{display:grid;gap:12px}
+.o-card{position:relative;padding:15px 16px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(158deg,rgba(30,26,43,.9),rgba(12,10,18,.92));transition:.25s;cursor:pointer}
+.o-card:hover{border-color:rgba(232,195,107,.45);transform:translateY(-2px)}
+.o-card.sel{border-color:var(--shu);box-shadow:0 0 0 2px rgba(226,72,61,.25)}
+.o-top{display:flex;align-items:center;gap:9px;margin-bottom:9px;flex-wrap:wrap}
+.o-id{font-family:var(--ff-m);font-size:12px;color:var(--kin)}
+.o-check{width:17px;height:17px;accent-color:#E2483D;cursor:pointer}
+.st{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:99px;font-size:11px;font-weight:800;border:1px solid;white-space:nowrap}
+.st i{font-style:normal;font-family:var(--ff-jp);font-size:12px}
+.o-svc{font-size:15.5px;font-weight:800;color:#FFF3E2;line-height:1.3}
+.o-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:7px;font-size:12px;color:var(--muted);font-family:var(--ff-m)}
+.o-meta b{color:#D7CEDD;font-weight:700}
+.plate{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid rgba(232,195,107,.5);background:rgba(255,255,255,.06);
+  font-family:var(--ff-m);font-size:11.5px;color:#F0E6D6;letter-spacing:.06em}
+.o-rail{display:flex;gap:4px;margin-top:11px}
+.o-rail i{flex:1;height:3px;border-radius:2px;background:rgba(232,195,107,.16)}
+.o-rail i.on{background:linear-gradient(90deg,var(--shu),var(--kin))}
+.o-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px;padding-top:11px;border-top:1px dashed rgba(232,195,107,.18)}
+.o-price{font-family:var(--ff-d);font-size:18px;color:var(--kin2);margin-right:auto}
+.o-empty{padding:46px 18px;text-align:center;color:var(--muted)}
+.o-empty b{display:block;font-family:var(--ff-jp);font-size:30px;color:var(--shu2);margin-bottom:10px}
+.d-summary{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px 0}
+.d-summary span{padding:6px 10px;border-radius:9px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-family:var(--ff-m);font-size:11px;color:var(--muted)}
+.d-summary b{color:var(--kin2)}
+/* ---- заказ-наряд ---- */
+.od-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.od-f{padding:11px 13px;border-radius:11px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+.od-f > span{display:block;font-family:var(--ff-m);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.od-f b{font-size:14.5px;color:#F2E8DA;word-break:break-word}
+.od-f.full{grid-column:1/-1}
+.od-steps{display:flex;gap:6px;margin-bottom:16px}
+.od-step{flex:1;text-align:center;padding:9px 4px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:11px;color:var(--muted)}
+.od-step b{display:block;font-family:var(--ff-jp);font-size:15px;margin-bottom:2px;color:#8E869B}
+.od-step.on{border-color:var(--shu);background:rgba(226,72,61,.16);color:#FFD9D2}
+.od-step.on b{color:var(--kin2)}
+.od-step.past{border-color:rgba(99,192,138,.45);background:rgba(99,192,138,.1);color:#B6E9C9}
+.od-sec{margin-top:18px}
+.od-sec h4{display:flex;align-items:center;gap:9px;font-family:var(--ff-m);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--kin);margin-bottom:12px}
+.od-sec h4 i{font-style:normal;font-family:var(--ff-jp);font-size:14px;color:var(--shu2)}
+.timeline{position:relative;padding-left:22px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--shu),rgba(232,195,107,.3))}
+.tl{position:relative;padding:0 0 14px}
+.tl::before{content:"";position:absolute;left:-19px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--kin);box-shadow:0 0 0 3px rgba(232,195,107,.16)}
+.tl:last-child{padding-bottom:0}
+.tl:last-child::before{background:var(--shu2);box-shadow:0 0 0 3px rgba(226,72,61,.2)}
+.tl span{display:block;font-family:var(--ff-m);font-size:10.5px;color:var(--muted)}
+.tl b{font-size:13.5px;font-weight:600;color:#E8DFD2}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.ph{position:relative;margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#0E0C16;cursor:pointer;aspect-ratio:4/3}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ph:hover img{transform:scale(1.07)}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:6px 8px;font-size:10.5px;color:#EFE6DA;background:linear-gradient(180deg,transparent,rgba(6,5,10,.9))}
+.ph .del{position:absolute;right:6px;top:6px;width:24px;height:24px;border-radius:7px;border:1px solid rgba(255,77,94,.5);
+  background:rgba(10,9,16,.8);color:#FF97A0;cursor:pointer;font-size:11px;line-height:1;opacity:0;transition:.2s}
+.ph:hover .del{opacity:1}
+.ph .del:hover{background:rgba(255,77,94,.3);color:#fff}
+.drop{margin-top:12px;padding:16px;border-radius:12px;border:1px dashed rgba(232,195,107,.4);background:rgba(232,195,107,.05);text-align:center;transition:.2s}
+.drop.over{border-color:var(--shu);background:rgba(226,72,61,.12)}
+.drop p{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.drop .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center}
+.od-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.cancel-banner{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:12px;margin-bottom:14px;
+  background:rgba(255,77,94,.12);border:1px solid rgba(255,77,94,.4);color:#FFA8B0;font-size:13px;font-weight:700}
+.cancel-banner span{font-family:var(--ff-jp);font-size:17px}
+/* ---- лайтбокс ---- */
+.lightbox{position:fixed;inset:0;z-index:110;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(4,3,8,.92);backdrop-filter:blur(8px)}
+.lightbox.open{display:flex;animation:fade .25s}
+.lightbox img{max-width:min(1100px,92vw);max-height:80vh;border-radius:14px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.lb-cap{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-size:13px;color:#D8CFE0}
+.lb-x{position:absolute;right:20px;top:20px}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(20,17,30,.8);color:var(--kin);font-size:18px;cursor:pointer;transition:.2s}
+.lb-nav:hover{background:rgba(226,72,61,.3);color:#fff}
+.lb-prev{left:18px}.lb-next{right:18px}
+/* ---- тосты ---- */
+.toasts{position:fixed;left:18px;bottom:18px;z-index:130;display:flex;flex-direction:column-reverse;gap:10px;max-width:min(400px,92vw)}
+.toast{position:relative;display:flex;align-items:flex-start;gap:11px;padding:13px 14px;border-radius:13px;overflow:hidden;
+  border:1px solid var(--line);background:linear-gradient(150deg,#1E1A2C,#0C0A14);box-shadow:0 18px 40px rgba(0,0,0,.55);animation:tin .35s cubic-bezier(.2,.9,.25,1)}
+@keyframes tin{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+.toast.out{animation:tout .3s forwards}
+@keyframes tout{to{opacity:0;transform:translateX(-24px)}}
+.toast .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-family:var(--ff-jp);font-size:14px;flex:none;color:#FFF3E2}
+.toast .msg{flex:1;font-size:13px;color:#E7DEE9;line-height:1.45}
+.toast .msg b{display:block;font-size:13.5px;color:#FFF3E2;margin-bottom:2px}
+.toast .act{border:1px solid rgba(232,195,107,.5);background:rgba(232,195,107,.12);color:var(--kin2);border-radius:8px;padding:6px 10px;
+  font-size:11.5px;font-weight:800;cursor:pointer;transition:.2s;white-space:nowrap}
+.toast .act:hover{background:rgba(232,195,107,.25)}
+.toast .tx{border:0;background:transparent;color:#7E7689;cursor:pointer;font-size:13px;padding:2px}
+.toast .bar{position:absolute;left:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--shu),var(--kin));animation:tbar linear forwards}
+@keyframes tbar{from{width:100%}to{width:0}}
+.toast.good .ic{background:linear-gradient(150deg,#3E9E68,#1F5B3C)}
+.toast.bad .ic{background:linear-gradient(150deg,#E2483D,#7C1B18)}
+.toast.info .ic{background:linear-gradient(150deg,var(--indigo),#14264A)}
+.toast.warn .ic{background:linear-gradient(150deg,#D79A2B,#7A5210)}
+/* ============================ АДАПТИВ ============================ */
+@media(max-width:1180px){
+  .nav a{padding:7px 9px;font-size:12.5px}
+  .chip-db{display:none}
+}
+@media(max-width:1024px){
+  :root{--hdr:66px}
+  .nav{display:none}
+  .burger{display:grid}
+  .hero-grid{grid-template-columns:1fr;gap:26px}
+  .tategaki{display:none}
+  .hero-copy{padding-left:0}
+  .steps-art{display:none}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps::before{display:none}
+  .ct-grid{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+  .book-dragon{display:none}
+  .bo-actions{align-items:stretch;width:100%}
+  .bo-actions .btn,.book-foot .btn{width:100%}
+  .book-foot{align-items:stretch}
+}
+@media(max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:1fr}
+  .rev-top{grid-template-columns:1fr;gap:16px}
+  .rev-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-desc{min-height:0}
+  .ct-cards{grid-template-columns:1fr}
+  .od-grid{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr}
+  .ptable thead{display:none}
+  .table-wrap{max-height:none;background:transparent;border:0;box-shadow:none;overflow:visible}
+  .ptable,.ptable tbody,.ptable tr,.ptable td{display:block;width:100%}
+  .ptable tr{position:relative;padding:14px;margin-bottom:10px;border-radius:14px;border:1px solid rgba(36,31,42,.16);background:rgba(255,253,247,.8)}
+  .ptable td{border:0;padding:3px 0}
+  .ptable td[data-label]::before{content:attr(data-label) " · ";font-family:var(--ff-m);font-size:10px;letter-spacing:.1em;color:#8A7657;text-transform:uppercase}
+  .c-name{font-size:16px;margin-bottom:4px}
+  .c-act{text-align:left;margin-top:9px}
+  .drawer{width:100%}
+  .toasts{left:12px;right:12px;bottom:12px;max-width:none}
+  .hero-title{font-size:clamp(44px,13vw,72px)}
+  .modal{max-height:92vh}
+  .lb-nav{width:38px;height:38px}
+}
+@media(max-width:420px){
+  .stats{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .brand-txt em{display:none}
+  .btn-cab span{display:none}
+  .btn-cab{padding:10px 13px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bg-mesh"></div>
+  <div class="bg-clouds"><span></span><span></span></div>
+  <div class="bg-waves"></div>
+  <div class="bg-grain"></div>
+</div>
+
+<header class="hdr" id="hdr">
+  <a class="brand" href="#top" aria-label="ГАРАЖ 77 — наверх">
+    <span class="seal"><b>77</b><i>車</i></span>
+    <span class="brand-txt"><b>ГАРАЖ 77</b><em>ガレージ・ナナナ</em></span>
+  </a>
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="#services" data-nav="services"><i>整備</i>Услуги</a>
+    <a href="#prices" data-nav="prices"><i>料金</i>Цены</a>
+    <a href="#booking" data-nav="booking"><i>予約</i>Запись</a>
+    <a href="#reviews" data-nav="reviews"><i>口碑</i>Отзывы</a>
+    <a href="#contacts" data-nav="contacts"><i>地図</i>Контакты</a>
+  </nav>
+  <div class="hdr-right">
+    <span class="chip chip-db" id="dbChip"><i class="dot"></i><span>DB: …</span></span>
+    <button class="chip" id="sndBtn" type="button"><i>音</i><span>SND:ON</span></button>
+    <button class="btn btn-primary btn-cab" id="cabBtn" type="button"><i class="jp">帳</i><span id="cabLabel">Кабинет</span></button>
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <a href="#services"><span>Услуги</span><i>整備</i></a>
+  <a href="#prices"><span>Цены</span><i>料金</i></a>
+  <a href="#booking"><span>Запись</span><i>予約</i></a>
+  <a href="#reviews"><span>Отзывы</span><i>口碑</i></a>
+  <a href="#contacts"><span>Контакты</span><i>地図</i></a>
+  <div class="mm-chips">
+    <button class="btn btn-primary btn-sm" id="cabMobile" type="button"><i class="jp">帳</i> Кабинет</button>
+    <a class="btn btn-ghost btn-sm" href="#booking">Записаться →</a>
+  </div>
+</div>
+
+<main>
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="tategaki" aria-hidden="true">日本の整備工場</span>
+      <div class="pill" id="openPill"><i class="dot live"></i><span>Открыто · посты свободны сегодня</span></div>
+      <h1 class="hero-title"><span class="l1">ГАРАЖ</span><span class="l2">77</span></h1>
+      <svg class="brush" viewBox="0 0 420 16" aria-hidden="true"><path d="M4 11C70 4 150 13 214 7c62-6 128 3 202-2" fill="none" stroke="#E2483D" stroke-width="7" stroke-linecap="round" opacity=".85"/><path d="M10 14C90 9 170 15 250 10c56-4 110 2 160 0" fill="none" stroke="#E8C36B" stroke-width="2" stroke-linecap="round" opacity=".6"/></svg>
+      <p class="hero-jp">丁寧に、正確に、速く。</p>
+      <p class="hero-sub"><b>Японский автосервис полного цикла в Ангарске.</b> Диагностика, ремонт и обслуживание любой сложности. Прозрачные цены, онлайн-запись за 30 секунд и фотоотчёт по каждой операции — прямо в личном кабинете.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#booking">Записаться на сервис <i>→</i></a>
+        <a class="btn btn-ghost" href="#prices">Прайс-лист</a>
+      </div>
+      <ul class="hero-chips">
+        <li><b>診</b> Диагностика 0 ₽ при ремонте</li>
+        <li><b>保</b> Гарантия 12 мес</li>
+        <li><b>純</b> Оригинальные запчасти</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="scene-frame">
+        <span class="scene-tag">工房 · /dev/post04</span>
+        <svg id="scene" viewBox="0 0 640 560" role="img" aria-label="Ночной цех ГАРАЖ 77: красные тории, дракон, сакура и автомобиль на подъёмнике">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1C1836"/><stop offset=".55" stop-color="#141127"/><stop offset="1" stop-color="#0A0910"/></linearGradient>
+            <radialGradient id="sunG"><stop offset="0" stop-color="#FF7A5E"/><stop offset=".62" stop-color="#E2483D"/><stop offset="1" stop-color="#8E1B14"/></radialGradient>
+            <radialGradient id="lampGlow"><stop offset="0" stop-color="#F0A93B" stop-opacity=".5"/><stop offset="1" stop-color="#F0A93B" stop-opacity="0"/></radialGradient>
+            <linearGradient id="bayG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#262038"/><stop offset="1" stop-color="#0C0A14"/></linearGradient>
+            <linearGradient id="toriiG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF6A52"/><stop offset="1" stop-color="#A82219"/></linearGradient>
+            <linearGradient id="floorG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#191527"/><stop offset="1" stop-color="#0A0910"/></linearGradient>
+            <linearGradient id="carG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A5478"/><stop offset="1" stop-color="#241F35"/></linearGradient>
+          </defs>
+          <rect width="640" height="560" fill="url(#sky)"/>
+          <g fill="#E8C36B" opacity=".45">
+            <circle cx="70" cy="60" r="1.6"/><circle cx="150" cy="34" r="1.2"/><circle cx="250" cy="70" r="1.4"/><circle cx="360" cy="40" r="1.1"/><circle cx="470" cy="66" r="1.5"/><circle cx="560" cy="36" r="1.2"/><circle cx="610" cy="96" r="1.3"/><circle cx="30" cy="120" r="1.1"/>
+          </g>
+          <circle cx="432" cy="184" r="116" fill="url(#sunG)" opacity=".9"/>
+          <circle cx="432" cy="184" r="130" fill="none" stroke="#E8C36B" stroke-opacity=".22"/>
+          <g fill="none" stroke="#E8C36B" stroke-opacity=".16" stroke-width="2">
+            <path d="M20 262q60-18 120 0t120 0"/><path d="M300 306q70-20 140 0t140 0"/><path d="M60 210q40-12 80 0t80 0"/>
+          </g>
+          <path d="M20 336C90 328 140 272 196 210c10-11 28-11 38 0 56 62 106 118 176 126Z" fill="#1B2340" opacity=".92"/>
+          <path d="M176 232c10-12 24-26 30-30 8-4 18 0 26 10 8 10 18 20 26 26-18-6-32 4-46-2-12-6-24 2-36-4Z" fill="#E9E4F0" opacity=".7"/>
+          <g id="dragonLayer"></g>
+          <g>
+            <path d="M46 142Q320 112 594 142l0 16Q320 130 46 158Z" fill="url(#toriiG)"/>
+            <rect x="58" y="158" width="524" height="8" fill="#7C1B14" opacity=".9"/>
+            <rect x="86" y="196" width="468" height="15" fill="url(#toriiG)"/>
+            <rect x="96" y="152" width="22" height="322" fill="url(#toriiG)"/>
+            <rect x="522" y="152" width="22" height="322" fill="url(#toriiG)"/>
+            <rect x="298" y="160" width="44" height="40" rx="4" fill="#7C1B14" stroke="#E8C36B" stroke-opacity=".55"/>
+            <text x="320" y="191" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="25" fill="#E8C36B">車</text>
+          </g>
+          <g>
+            <path d="M124 254Q320 214 516 254l-14 14Q320 232 138 268Z" fill="#2A1B22" stroke="#E8C36B" stroke-opacity=".3"/>
+            <rect x="150" y="262" width="340" height="188" fill="url(#bayG)"/>
+            <ellipse cx="320" cy="308" rx="150" ry="72" fill="url(#lampGlow)"/>
+            <g stroke="#E8C36B" stroke-opacity=".14"><path d="M150 300h340M150 340h340M150 380h340M150 420h340"/></g>
+            <rect x="186" y="300" width="13" height="150" fill="#2F2A44"/><rect x="441" y="300" width="13" height="150" fill="#2F2A44"/>
+            <rect x="199" y="408" width="60" height="7" fill="#3A3452"/><rect x="381" y="408" width="60" height="7" fill="#3A3452"/>
+            <g transform="translate(0,22)">
+              <ellipse cx="322" cy="404" rx="128" ry="9" fill="#F0A93B" opacity=".14"/>
+              <path d="M204 382l6-24q8-16 30-20l38-24q34-14 74-8l52 22q28 6 38 22l6 32z" fill="url(#carG)" stroke="#E8C36B" stroke-opacity=".45"/>
+              <path d="M252 340l26-18q26-10 54-6l30 16z" fill="#7E8CC0" opacity=".55"/>
+              <path d="M300 316v24" stroke="#241F35" stroke-width="3"/>
+              <circle cx="254" cy="384" r="21" fill="#15121F" stroke="#E8C36B" stroke-opacity=".45"/><circle cx="394" cy="384" r="21" fill="#15121F" stroke="#E8C36B" stroke-opacity=".45"/>
+              <circle cx="254" cy="384" r="8" fill="#E8C36B" opacity=".55"/><circle cx="394" cy="384" r="8" fill="#E8C36B" opacity=".55"/>
+              <rect x="430" y="352" width="12" height="7" rx="3" fill="#FF6A52"/>
+            </g>
+            <rect x="150" y="262" width="340" height="3" fill="#4EA8FF" opacity=".3"><animate attributeName="y" values="262;447;262" dur="7s" repeatCount="indefinite"/></rect>
+            <g class="lantern" style="transform-origin:180px 212px">
+              <path d="M180 211v14" stroke="#E8C36B" stroke-opacity=".6"/>
+              <ellipse cx="180" cy="240" rx="15" ry="19" fill="#E2483D" stroke="#7C1B14"/>
+              <rect x="171" y="220" width="18" height="4" fill="#E8C36B"/><rect x="171" y="256" width="18" height="4" fill="#E8C36B"/>
+              <text x="180" y="246" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="14" fill="#FFF3E2">修</text>
+            </g>
+            <g class="lantern l2" style="transform-origin:460px 212px">
+              <path d="M460 211v14" stroke="#E8C36B" stroke-opacity=".6"/>
+              <ellipse cx="460" cy="240" rx="15" ry="19" fill="#E2483D" stroke="#7C1B14"/>
+              <rect x="451" y="220" width="18" height="4" fill="#E8C36B"/><rect x="451" y="256" width="18" height="4" fill="#E8C36B"/>
+              <text x="460" y="246" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="14" fill="#FFF3E2">整</text>
+            </g>
+          </g>
+          <rect x="0" y="450" width="640" height="110" fill="url(#floorG)"/>
+          <path d="M0 450h640" stroke="#E8C36B" stroke-opacity=".35"/>
+          <ellipse cx="320" cy="470" rx="150" ry="14" fill="#E2483D" opacity=".12"/>
+          <g fill="none" stroke="#E8C36B" stroke-opacity=".14">
+            <path d="M-10 530a30 30 0 0 1 60 0M50 530a30 30 0 0 1 60 0M110 530a30 30 0 0 1 60 0M170 530a30 30 0 0 1 60 0M230 530a30 30 0 0 1 60 0M290 530a30 30 0 0 1 60 0M350 530a30 30 0 0 1 60 0M410 530a30 30 0 0 1 60 0M470 530a30 30 0 0 1 60 0M530 530a30 30 0 0 1 60 0M590 530a30 30 0 0 1 60 0"/>
+          </g>
+          <g font-family="Shippori Mincho, serif" font-size="19" fill="#E8C36B" opacity=".4">
+            <text x="604" y="330">整</text><text x="604" y="356">備</text><text x="604" y="382">工</text><text x="604" y="408">房</text>
+          </g>
+          <g id="sakuraLayer" transform="translate(0,8)"></g>
+        </svg>
+      </div>
+      <div class="live">
+        <div class="live-head"><span class="mono">garage77 — цех · пост 04</span><span class="live-dot">● LIVE</span></div>
+        <div class="live-line" id="liveLine">✓ Диагностика завершена · BMW 3 · пост №4 · только что</div>
+        <div class="live-bar"><i id="liveBar"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+</section>
+
+<section class="stats-sec"><div class="wrap stats" id="statsRow"></div></section>
+
+<section id="services">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="eyebrow"><i>整備</i> Что мы делаем</span>
+      <h2 class="h2">Полный цикл — <span class="accent">от лампочки до капиталки</span></h2>
+      <p class="lead">Четырнадцать направлений, один стандарт качества. Каждый мастер сертифицирован, каждая операция фиксируется в заказ-наряде — как в мастерской старого Киото, только с современным стендом.</p>
+    </header>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<section id="prices" class="washi">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="eyebrow"><i>料金</i> Прайс-лист</span>
+      <h2 class="h2">Честные цены без «сюрпризов» в счёте</h2>
+      <p class="lead">Стоимость фиксируется до начала работ. Ищите услугу или фильтруйте по категории — данные обновляются администратором в реальном времени.</p>
+    </header>
+    <div class="ptools">
+      <div class="search"><i>検</i><input id="priceSearch" type="search" placeholder="Поиск услуги…" aria-label="Поиск по прайсу"><button id="priceClearQ" type="button" aria-label="Очистить поиск">✕</button></div>
+      <div class="cats" id="priceCats"></div>
+      <button class="btn btn-ghost btn-sm" id="priceReset" type="button">Сброс</button>
+    </div>
+    <div class="table-wrap">
+      <table class="ptable">
+        <thead id="priceHead"><tr>
+          <th data-sort="name">Услуга <span>↕</span></th>
+          <th data-sort="cat">Категория <span>↕</span></th>
+          <th data-sort="time">Время <span>↕</span></th>
+          <th data-sort="price">Цена <span>↕</span></th>
+          <th></th>
+        </tr></thead>
+        <tbody id="priceBody"></tbody>
+      </table>
+    </div>
+    <div class="pfoot"><span id="priceCount"></span><span class="note">Цены указаны за работу, запчасти — отдельно. Диагностика 0 ₽ при ремонте у нас.</span></div>
+  </div>
+</section>
+
+<section id="booking">
+  <svg class="book-dragon" viewBox="0 0 640 260" aria-hidden="true"><g id="bookDragon"></g></svg>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="eyebrow"><i>予約</i> Онлайн-запись</span>
+      <h2 class="h2">Займите пост за <span class="accent">30 секунд</span></h2>
+    </header>
+    <div class="book-open reveal">
+      <div class="bo-copy">
+        <span class="bo-seal">申</span>
+        <div>
+          <h3>Форма новой заявки</h3>
+          <p>Открывается в отдельном окне: услуга, дата, свободные посты и предварительная смета. Страницу закрывать не нужно.</p>
+        </div>
+      </div>
+      <div class="bo-actions">
+        <button class="btn btn-primary" id="bookOpen" type="button">Оформить заявку <i>→</i></button>
+        <span class="tiny">Перезвоним за 15 минут · ежедневно 08:00–22:00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="steps-sec">
+  <div class="wrap">
+    <header class="sec-head reveal" style="position:relative">
+      <span class="eyebrow"><i>手順</i> Как мы работаем</span>
+      <h2 class="h2">Четыре шага до выдачи</h2>
+      <svg class="steps-art" viewBox="0 0 140 140" aria-hidden="true">
+        <path d="M22 92q48 34 96 0l6 16q-54 38-108 0z" fill="#2A1B22" stroke="#E8C36B" stroke-opacity=".5"/>
+        <path d="M28 84q42 30 84 0l4 12q-46 32-92 0z" fill="#3A2530" stroke="#E8C36B" stroke-opacity=".4"/>
+        <path d="M34 82q36-64 72 0z" fill="#1F1B2C" stroke="#E8C36B" stroke-opacity=".7"/>
+        <path d="M70 20v62M50 40q20 10 40 0M42 58q28 12 56 0" stroke="#E8C36B" stroke-opacity=".25" fill="none"/>
+        <path d="M40 46q30-42 60 0-30-22-60 0z" fill="#E8C36B"/>
+        <circle cx="70" cy="58" r="12" fill="#E2483D" opacity=".9"/>
+        <text x="70" y="64" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="15" fill="#FFF3E2">侍</text>
+        <path d="M48 92q22 24 44 0-22 12-44 0z" fill="#8E1B14"/>
+      </svg>
+    </header>
+    <div class="steps">
+      <article class="step reveal" style="--i:0"><em>01</em><div class="step-num">壱</div><h4>Заявка</h4><p>Вы оставляете заявку — она сразу попадает к администратору.</p></article>
+      <article class="step reveal" style="--i:1"><em>02</em><div class="step-num">弐</div><h4>Подтверждение</h4><p>Звоним в течение 15 минут, уточняем детали и запчасти.</p></article>
+      <article class="step reveal" style="--i:2"><em>03</em><div class="step-num">参</div><h4>Ремонт</h4><p>Фотоотчёт каждого этапа. Согласование доп. работ — обязательно.</p></article>
+      <article class="step reveal" style="--i:3"><em>04</em><div class="step-num">肆</div><h4>Выдача</h4><p>Проверка на стенде, гарантийный талон на 12 месяцев.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="washi">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="eyebrow"><i>口碑</i> Отзывы</span>
+      <h2 class="h2">Нам доверяют самое дорогое</h2>
+      <p class="lead">Реальные отзывы клиентов из нашей базы. Средняя оценка 4.9 — и мы работаем, чтобы она не падала.</p>
+    </header>
+    <div class="rev-top">
+      <div class="rev-score"><b>4.9</b><div class="stars">★★★★★</div><span>1 240 отзывов за год</span></div>
+      <div class="rev-bars" id="revBars"></div>
+    </div>
+    <div class="rev-grid" id="revGrid"></div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <span class="eyebrow"><i>地図</i> Контакты</span>
+      <h2 class="h2">Приезжайте — кофе и матча за нами</h2>
+      <p class="lead">Жёлтые ворота и красные тории во дворе не спутать. Въезд со стороны дублёра, посты 01–08.</p>
+    </header>
+    <div class="ct-grid">
+      <div class="ct-cards">
+        <div class="ct-card reveal" style="--i:0"><div class="k"><i>住所</i> АДРЕС</div><b>г. Ангарск, 96 квартал, 5 д</b><p>Въезд со стороны дублёра, ориентир — жёлтые ворота и тории.</p></div>
+        <div class="ct-card reveal" style="--i:1"><div class="k"><i>電話</i> ТЕЛ</div><b><a href="tel:+74957777777">+7 (495) 777-77-77</a></b><p>Ежедневно 08:00 – 22:00, без выходных.</p></div>
+        <div class="ct-card reveal" style="--i:2"><div class="k"><i>便</i> ПОЧТА</div><b><a href="mailto:service@garage77.ru">service@garage77.ru</a></b><p>Ответим в течение часа в рабочее время.</p></div>
+        <div class="ct-card reveal" style="--i:3"><div class="k"><i>保証</i> ГАРАНТ</div><b>12 месяцев</b><p>На все работы и установленные запчасти.</p></div>
+        <div class="ct-cta"><p>Свободные посты видны в форме записи — выберите время и приезжайте.</p><a class="btn btn-primary" href="#booking">Записаться →</a></div>
+      </div>
+      <div class="map-frame reveal">
+        <div class="map-head"><b>МЫ НА КАРТЕ · 地図</b><i>安ガルスク</i></div>
+        <div class="map-body">
+          <span class="map-badge">地図 · ГАРАЖ 77</span>
+          <iframe title="ГАРАЖ 77 на Яндекс.Картах — Ангарск, 96 квартал, 5 д" loading="lazy" allow="fullscreen"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://yandex.ru/map-widget/v1/?ll=103.876562%2C52.523021&mode=map&z=17&pt=103.876562%2C52.523021%2Cpm2rdm"></iframe>
+        </div>
+        <div class="map-actions">
+          <button class="btn btn-ghost btn-sm" id="copyAddr" type="button">Скопировать адрес</button>
+          <a class="btn btn-gold btn-sm" href="https://yandex.ru/maps/?text=Ангарск%2096%20квартал%205д" target="_blank" rel="noopener">Открыть в Яндекс.Картах →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <svg class="ftr-dragon" viewBox="0 0 420 200" aria-hidden="true"><g id="ftrDragon"></g></svg>
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div class="ftr-brand">
+        <a class="brand" href="#top"><span class="seal"><b>77</b><i>車</i></span><span class="brand-txt"><b>ГАРАЖ 77</b><em>ガレージ・ナナナ</em></span></a>
+        <p>Японский автосервис полного цикла в Ангарске. Работаем честно с 2012 года: аккуратно, точно, быстро — 丁寧に、正確に、速く。</p>
+      </div>
+      <div>
+        <h5>Разделы</h5>
+        <a href="#services">Услуги</a><a href="#prices">Прайс-лист</a><a href="#booking">Онлайн-запись</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+      </div>
+      <div>
+        <h5>Связь</h5>
+        <a href="tel:+74957777777">+7 (495) 777-77-77</a><a href="mailto:service@garage77.ru">service@garage77.ru</a><a href="#booking">Личный кабинет</a>
+        <p class="tiny" style="margin-top:10px">Ежедневно 08:00 – 22:00</p>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 ГАРАЖ 77 · ООО «Гараж Семьдесят Семь» · ОГРН 1157746000077</span>
+      <span>uptime 99.98% · GARAGE-OS v7.7 · 侍 edition</span>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="cabScrim"></div>
+
+<div class="overlay" id="bookOverlay" role="dialog" aria-modal="true" aria-label="Новая заявка">
+  <div class="scrim-in"></div>
+  <div class="modal book-modal wide">
+    <div class="noren"><span>新</span><span>規</span><span>予</span><span>約</span></div>
+    <div class="modal-head">
+      <span class="kanji-badge">予</span>
+      <div><h3>Новая заявка</h3><span class="sub">FORM-07 · ГАРАЖ 77</span></div>
+      <button class="x" id="bookClose" type="button" aria-label="Закрыть форму">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="bookForm" novalidate>
+        <div class="grid2">
+          <div class="field"><label for="fName">Ваше имя <i>名</i><b>*</b></label><input class="inp" id="fName" autocomplete="name" placeholder="Иван Петров"><span class="err" id="eName"></span></div>
+          <div class="field"><label for="fPhone">Телефон <i>電</i><b>*</b></label><input class="inp" id="fPhone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"><span class="err" id="ePhone"></span></div>
+          <div class="field"><label for="fCar">Марка и модель <i>車</i><b>*</b></label><input class="inp" id="fCar" placeholder="Toyota Mark II"><span class="err" id="eCar"></span></div>
+          <div class="field"><label for="fPlate">Госномер <i>番</i></label><input class="inp" id="fPlate" placeholder="А123ВС 38"><span class="err" id="ePlate"></span></div>
+          <div class="field full"><label for="fService">Услуга <i>業</i><b>*</b></label><select class="inp" id="fService"><option value="">— выберите услугу —</option></select><span class="err" id="eService"></span></div>
+          <div class="field full"><label for="fDate">Дата <i>日</i><b>*</b></label><input class="inp" id="fDate" type="date"><span class="err" id="eDate"></span></div>
+        </div>
+        <div class="field"><label>Свободное время <i>時</i><b>*</b></label><div class="slots" id="slotBox"><span class="hint">сначала выберите дату…</span></div><span class="err" id="eSlot"></span></div>
+        <div class="field"><label for="fComment">Комментарий <i>備</i></label><textarea class="inp" id="fComment" maxlength="400" placeholder="Что беспокоит, какие запчасти свои, пожелания по времени"></textarea><span class="counter" id="cCount">0 / 400</span></div>
+        <div class="book-foot">
+          <div class="book-sum"><span>Предварительно</span><b id="estTotal" data-v="0">0 ₽</b><i id="estSvc">—</i><em id="estTime">—</em><u id="estWhen">—</u></div>
+          <button class="btn btn-primary" id="bookSubmit" type="submit">Создать заявку <i>→</i></button>
+        </div>
+        <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку данных</p>
+      </form>
+    </div>
+    <div class="hanko" id="hanko">受付</div>
+  </div>
+</div>
+
+
+<div class="overlay" id="authOverlay" role="dialog" aria-modal="true" aria-label="Вход в систему">
+  <div class="scrim-in"></div>
+  <div class="modal">
+    <div class="noren"><span>入</span><span>口</span><span>帳</span></div>
+    <div class="modal-head"><h3>Вход в систему</h3><span class="sub">GARAGE-OS</span><button class="x" id="authClose" type="button" aria-label="Закрыть">✕</button></div>
+    <div class="modal-body">
+      <div class="tabs"><button id="tabLogin" class="on" type="button">Вход</button><button id="tabReg" type="button">Регистрация</button></div>
+      <form id="loginForm" novalidate>
+        <div class="form-msg" id="loginMsg"></div>
+        <div class="field"><label for="lEmail">Email <i>信</i></label><input class="inp" id="lEmail" type="email" autocomplete="email" placeholder="you@mail.ru"><span class="err" id="eLEmail"></span></div>
+        <div class="field"><label for="lPass">Пароль <i>鍵</i></label><input class="inp" id="lPass" type="password" autocomplete="current-password" placeholder="••••••"><span class="err" id="eLPass"></span></div>
+        <button class="btn btn-primary btn-wide" id="loginBtn" type="submit">Войти →</button>
+        <div class="demo-box">
+          <p>Демо-доступы (клик — подставить):</p>
+          <button class="demo-cred" id="demoAdmin" type="button"><b>Админ</b> admin@garage77.ru / admin123</button>
+          <button class="demo-cred" id="demoClient" type="button"><b>Клиент</b> ivan@mail.ru / client123</button>
+        </div>
+      </form>
+      <form id="regForm" novalidate style="display:none">
+        <div class="form-msg" id="regMsg"></div>
+        <div class="field"><label for="rName">Имя <i>名</i><b>*</b></label><input class="inp" id="rName" placeholder="Иван Петров"><span class="err" id="eRName"></span></div>
+        <div class="field"><label for="rPhone">Телефон <i>電</i><b>*</b></label><input class="inp" id="rPhone" inputmode="tel" placeholder="+7 (___) ___-__-__"><span class="err" id="eRPhone"></span></div>
+        <div class="field"><label for="rEmail">Email <i>信</i><b>*</b></label><input class="inp" id="rEmail" type="email" placeholder="you@mail.ru"><span class="err" id="eREmail"></span></div>
+        <div class="field"><label for="rPass">Пароль <i>鍵</i><b>*</b></label><input class="inp" id="rPass" type="password" placeholder="минимум 6 символов"><span class="err" id="eRPass"></span></div>
+        <button class="btn btn-primary btn-wide" id="regBtn" type="submit">Создать аккаунт</button>
+        <p class="consent">Новые аккаунты получают роль <b>клиент</b>: запись на сервис, история заявок и статусы онлайн. Роль администратора выдаётся только владельцем системы.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<aside class="drawer" id="cabinet" role="dialog" aria-modal="true" aria-label="Личный кабинет">
+  <div class="drawer-head">
+    <div class="row"><span class="kanji-badge">帳</span><h3>Личный кабинет — заказ-наряды</h3><button class="x" id="cabClose" type="button" aria-label="Закрыть">✕</button></div>
+    <div class="userchip" id="cabUser"></div>
+  </div>
+  <div class="drawer-tools">
+    <div class="tool-row">
+      <button class="btn btn-primary btn-sm" id="cabNew" type="button">＋ Новая заявка</button>
+      <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">Выйти</button>
+    </div>
+    <div class="tool-row">
+      <div class="dsearch"><i>検</i><input id="cabSearch" type="search" placeholder="Поиск: №, имя, авто, услуга…" aria-label="Поиск по нарядам"></div>
+      <select class="mini-select" id="cabSort" aria-label="Сортировка">
+        <option value="new">Сначала новые</option>
+        <option value="old">Сначала старые</option>
+        <option value="price">Дороже → дешевле</option>
+      </select>
+    </div>
+    <div class="fchips" id="cabChips"></div>
+  </div>
+  <div class="bulkbar" id="bulkBar">
+    <b id="bulkCount">Выбрано: 0</b>
+    <button class="btn btn-ghost btn-sm" type="button" data-bulk="confirm">Подтвердить</button>
+    <button class="btn btn-ghost btn-sm" type="button" data-bulk="work">В работу</button>
+    <button class="btn btn-ghost btn-sm" type="button" data-bulk="cancel">Отменить</button>
+    <button class="btn btn-danger btn-sm" type="button" data-bulk="delete">Удалить</button>
+    <button class="btn btn-ghost btn-sm" type="button" data-bulk="clear">Снять выбор</button>
+  </div>
+  <div class="d-summary" id="cabSummary"></div>
+  <div class="drawer-body"><div class="o-list" id="cabList"></div></div>
+</aside>
+
+<div class="overlay" id="orderOverlay" role="dialog" aria-modal="true" aria-label="Заказ-наряд">
+  <div class="scrim-in"></div>
+  <div class="modal wide">
+    <div class="noren"><span>作</span><span>業</span><span>指</span><span>示</span></div>
+    <div class="modal-head"><h3 id="odTitle">Заказ-наряд</h3><span class="sub">ORDER</span><button class="x" id="odClose" type="button" aria-label="Закрыть">✕</button></div>
+    <div class="modal-body" id="odBody"></div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Фотоотчёт">
+  <button class="x lb-x" id="lbClose" type="button" aria-label="Закрыть">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" type="button" aria-label="Предыдущее фото">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" type="button" aria-label="Следующее фото">›</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+/* ============================== УТИЛИТЫ ============================== */
+const $ = (sel, root) => (root || document).querySelector(sel);
+const $$ = (sel, root) => Array.prototype.slice.call((root || document).querySelectorAll(sel));
+const byId = id => document.getElementById(id);
+const esc = v => String(v == null ? "" : v).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const NF = new Intl.NumberFormat("ru-RU");
+const money = n => NF.format(Math.round(Number(n) || 0)) + " \u20BD";
+const pad2 = n => (n < 10 ? "0" : "") + n;
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const fmtTime = m => { m = Number(m) || 0; if (m < 60) return m + " мин"; const h = Math.floor(m / 60), r = m % 60; return r ? h + " ч " + r + " мин" : h + " ч"; };
+const todayStr = () => { const d = new Date(); return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate()); };
+const ruDate = iso => { const p = String(iso || "").split("-"); return p.length === 3 ? p[2] + "." + p[1] + "." + p[0] : (iso || "—"); };
+const ruLong = iso => { const d = new Date(String(iso) + "T00:00:00"); return isNaN(d.getTime()) ? String(iso || "") : d.toLocaleDateString("ru-RU", { day: "numeric", month: "long", weekday: "short" }); };
+const stampNow = () => { const n = new Date(); return pad2(n.getDate()) + "." + pad2(n.getMonth() + 1) + " " + pad2(n.getHours()) + ":" + pad2(n.getMinutes()); };
+const hexId = () => { let s = ""; for (let i = 0; i < 32; i++) s += "0123456789abcdef"[Math.floor(Math.random() * 16)]; return s; };
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k){ try { localStorage.removeItem(k); } catch (e) {} }
+};
+const REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const ST = {
+  new:     { l: "Новая",        j: "新", c: "#4EA8FF" },
+  confirm: { l: "Подтверждена", j: "確", c: "#E8C36B" },
+  work:    { l: "В работе",     j: "工", c: "#F0A93B" },
+  done:    { l: "Выдана",       j: "完", c: "#63C08A" },
+  cancel:  { l: "Отменена",     j: "止", c: "#FF4D5E" }
+};
+const FLOW = ["new", "confirm", "work", "done"];
+const SLOT_TIMES = ["08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00"];
+const KANJI = { diag: "診", engine: "動", oil: "油", brakes: "制", electric: "電", body: "彩",
+  trans: "変", air: "冷", tires: "輪", glass: "硝", exhaust: "排", merge: "検", detail: "洗", road: "助" };
+const JPSUB = { diag: "シンダン", engine: "エンジン", oil: "オイル", brakes: "ブレーキ", electric: "デンキ", body: "ボディ",
+  trans: "トランスミッション", air: "エアコン", tires: "タイヤ", glass: "ガラス", exhaust: "ハイエキ", merge: "ケンサク", detail: "セイジ", road: "アシスト" };
+const CAT_INK = ["#B3241C", "#1F5B8F", "#7A5210", "#2E7D51", "#9B3A6B", "#3F3AA8"];
+const stHtml = k => { const s = ST[k] || ST.new; return '<span class="st" style="color:' + s.c + ';border-color:' + s.c + '66;background:' + s.c + '1f"><i>' + s.j + '</i>' + s.l + '</span>'; };
+
+/* ============================== РЕЗЕРВНЫЕ ДАННЫЕ ============================== */
+const SEED_SERVICES = [
+  { id:"diag", name:"Диагностика", tag:"01", desc:"Компьютерная диагностика всех систем, чтение ошибок, эндоскопия, проверка на стенде. Отчёт в PDF." },
+  { id:"engine", name:"Двигатель и КПП", tag:"02", desc:"От замены ремня до капитального ремонта. Дефектовка, расточка, сборка с моментной затяжкой." },
+  { id:"oil", name:"ТО и жидкости", tag:"03", desc:"Масло, фильтры, антифриз, тормозная жидкость. Регламент завода-изготовителя, отметка в сервисной книжке." },
+  { id:"brakes", name:"Тормоза и подвеска", tag:"04", desc:"Колодки, диски, суппорты, сайлентблоки, амортизаторы. Развал-схождение на 3D-стенде." },
+  { id:"electric", name:"Электрика", tag:"05", desc:"Проводка, генераторы, стартеры, сигнализации, свет. Поиск утечек тока тепловизором." },
+  { id:"body", name:"Кузов и покраска", tag:"06", desc:"Локальный ремонт, стапель, покраска в камере, полировка. Подбор краски по спектрофотометру." },
+  { id:"trans", name:"АКПП и вариаторы", tag:"07", desc:"Замена масла, ремонт гидроблока, восстановление вариаторов. Проверка давления и адаптация после ремонта." },
+  { id:"air", name:"Кондиционер и климат", tag:"08", desc:"Заправка фреоном, поиск утечек ультрафиолетом, ремонт компрессора, антибактериальная обработка." },
+  { id:"tires", name:"Шиномонтаж и диски", tag:"09", desc:"Сезонная переобувка, балансировка, правка литых дисков, ремонт бескамерных, сезонное хранение." },
+  { id:"glass", name:"Стёкла и оптика", tag:"10", desc:"Замена лобовых и боковых стёкол, ремонт сколов, полировка фар, коррекция света по ГОСТу." },
+  { id:"exhaust", name:"Выхлопная система", tag:"11", desc:"Замена катализаторов, пламегасителей, гофр и глушителей. Полировка нержавейки, обманки датчиков." },
+  { id:"merge", name:"Проверка перед покупкой", tag:"12", desc:"Комплексный осмотр донора: толщиномер, сканер, подъёмник, проверка истории. Отчёт за час." },
+  { id:"detail", name:"Детейлинг и химчистка", tag:"13", desc:"Химчистка салона, полировка кузова, керамика и защитные составы, озонирование, чернение резины." },
+  { id:"road", name:"Техпомощь и эвакуатор", tag:"14", desc:"Выезд по городу и трассе: пуск двигателя, подвоз жидкостей, снятие с сигнализации, погрузка и эвакуация." }
+];
+const SEED_PRICES = [
+  { id:1, name:"Компьютерная диагностика", cat:"Диагностика", time:40, price:1500 },
+  { id:2, name:"Диагностика подвески", cat:"Диагностика", time:30, price:900 },
+  { id:3, name:"Замена масла ДВС + фильтр", cat:"ТО и жидкости", time:40, price:800 },
+  { id:4, name:"Замена масла АКПП (частичная)", cat:"ТО и жидкости", time:60, price:2200 },
+  { id:5, name:"Замена воздушного фильтра", cat:"ТО и жидкости", time:20, price:300 },
+  { id:6, name:"Замена тормозных колодок (ось)", cat:"Тормоза и подвеска", time:60, price:1400 },
+  { id:7, name:"Замена тормозных дисков + колодки", cat:"Тормоза и подвеска", time:120, price:2800 },
+  { id:8, name:"Развал-схождение 3D", cat:"Тормоза и подвеска", time:60, price:1900 },
+  { id:9, name:"Замена амортизатора (шт.)", cat:"Тормоза и подвеска", time:90, price:1800 },
+  { id:10, name:"Замена ремня ГРМ", cat:"Двигатель и КПП", time:240, price:6500 },
+  { id:11, name:"Замена свечей зажигания", cat:"Двигатель и КПП", time:45, price:900 },
+  { id:12, name:"Капитальный ремонт ДВС", cat:"Двигатель и КПП", time:2880, price:45000 },
+  { id:13, name:"Поиск утечки тока", cat:"Электрика", time:90, price:1600 },
+  { id:14, name:"Ремонт генератора", cat:"Электрика", time:150, price:3200 },
+  { id:15, name:"Установка сигнализации", cat:"Электрика", time:240, price:4500 },
+  { id:16, name:"Покраска элемента кузова", cat:"Кузов и покраска", time:480, price:7500 },
+  { id:17, name:"Полировка кузова", cat:"Кузов и покраска", time:360, price:5500 },
+  { id:18, name:"Ремонт скола / трещины стекла", cat:"Кузов и покраска", time:45, price:1200 },
+  { id:19, name:"Замена масла в АКПП (полная, аппарат)", cat:"АКПП и вариаторы", time:120, price:3800 },
+  { id:20, name:"Ремонт гидроблока АКПП", cat:"АКПП и вариаторы", time:480, price:18000 },
+  { id:21, name:"Адаптация АКПП после ремонта", cat:"АКПП и вариаторы", time:60, price:2400 },
+  { id:22, name:"Заправка кондиционера R-134a", cat:"Кондиционер и климат", time:60, price:2200 },
+  { id:23, name:"Поиск утечки фреона (ультрафиолет)", cat:"Кондиционер и климат", time:90, price:1800 },
+  { id:24, name:"Антибактериальная обработка климата", cat:"Кондиционер и климат", time:40, price:1400 },
+  { id:25, name:"Сезонная переобувка (комплект)", cat:"Шиномонтаж и диски", time:90, price:2600 },
+  { id:26, name:"Балансировка колеса", cat:"Шиномонтаж и диски", time:20, price:500 },
+  { id:27, name:"Правка литого диска", cat:"Шиномонтаж и диски", time:60, price:2500 },
+  { id:28, name:"Сезонное хранение шин", cat:"Шиномонтаж и диски", time:30, price:3500 },
+  { id:29, name:"Замена лобового стекла", cat:"Стёкла и оптика", time:150, price:4200 },
+  { id:30, name:"Полировка фар (пара)", cat:"Стёкла и оптика", time:90, price:2200 },
+  { id:31, name:"Коррекция света по ГОСТу", cat:"Стёкла и оптика", time:45, price:1200 },
+  { id:32, name:"Замена гофры глушителя", cat:"Выхлопная система", time:120, price:2800 },
+  { id:33, name:"Установка пламегасителя", cat:"Выхлопная система", time:240, price:5500 },
+  { id:34, name:"Полировка системы выпуска", cat:"Выхлопная система", time:180, price:4200 },
+  { id:35, name:"Проверка авто перед покупкой", cat:"Проверка перед покупкой", time:90, price:2900 },
+  { id:36, name:"Экспертиза с толщиномером и отчётом", cat:"Проверка перед покупкой", time:120, price:3900 },
+  { id:37, name:"Химчистка салона (комплекс)", cat:"Детейлинг и химчистка", time:480, price:9500 },
+  { id:38, name:"Полировка кузова абразивная", cat:"Детейлинг и химчистка", time:420, price:8900 },
+  { id:39, name:"Керамическое покрытие кузова", cat:"Детейлинг и химчистка", time:600, price:18000 },
+  { id:40, name:"Выезд техпомощи по городу", cat:"Техпомощь и эвакуатор", time:60, price:2500 },
+  { id:41, name:"Эвакуация до сервиса", cat:"Техпомощь и эвакуатор", time:90, price:3500 },
+  { id:42, name:"Пуск двигателя / прикуривание", cat:"Техпомощь и эвакуатор", time:40, price:1500 }
+];
+const SEED_REVIEWS = [
+  { who:"Иван П.", car:"BMW 320i · замена ГРМ", stars:5, date:"12.10.2026", text:"Приехал со стуком в двигателе. За день перебрали ГРМ, прислали 14 фото в кабинет — видно каждый болт. Цена совпала со сметой до рубля." },
+  { who:"Марина К.", car:"Kia Rio · ТО-60000", stars:5, date:"28.09.2026", text:"Записалась онлайн ночью, утром уже подтвердили. Масло поменяли за 35 минут, кофе действительно вкусный. Сервисная книжка с отметкой." },
+  { who:"Сергей Д.", car:"Toyota Camry · тормоза", stars:5, date:"15.09.2026", text:"Диски и колодки по кругу. Показали старые детали, замерили новые штангенциркулем при мне. Так работают честные сервисы." },
+  { who:"Алексей В.", car:"VW Tiguan · электрика", stars:4, date:"02.09.2026", text:"Искали утечку тока полдня — нашли окисленный контакт в багажнике. Минус звезда за ожидание, но результат отличный." },
+  { who:"Ольга Н.", car:"Mazda CX-5 · покраска", stars:5, date:"21.08.2026", text:"Царапина на крыле после парковки. Подобрали краску идеально — даже на солнце не видно перехода. Гарантийный талон выдали." },
+  { who:"Дмитрий Р.", car:"Lada Vesta · подвеска", stars:5, date:"07.08.2026", text:"Развал-схождение на 3D-стенде, распечатка до/после. Машину перестало тянуть вправо. Вернусь на зимнее ТО." }
+];
+const SEED_STATS = [
+  { n:14, l:"лет на рынке", k:"年" },
+  { n:48210, l:"закрытых заказ-нарядов", k:"件" },
+  { n:87, suffix:"%", l:"клиентов возвращаются", k:"客" },
+  { n:8, l:"подъёмников", k:"台" }
+];
+function demoPhoto(kind, kanji, label, accent){
+  const lift = kind === 1 ? 300 : kind === 3 ? 330 : 316;
+  const svg = "<svg xmlns='http://www.w3.org/2000/svg' width='640' height='480' viewBox='0 0 640 480'>" +
+    "<defs><linearGradient id='bg' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#1B1830'/><stop offset='1' stop-color='#0A0910'/></linearGradient>" +
+    "<radialGradient id='lamp' cx='.5' cy='.2'><stop offset='0' stop-color='#F0A93B' stop-opacity='.55'/><stop offset='1' stop-color='#F0A93B' stop-opacity='0'/></radialGradient></defs>" +
+    "<rect width='640' height='480' fill='url(#bg)'/>" +
+    "<circle cx='470' cy='120' r='84' fill='" + accent + "' opacity='.22'/>" +
+    "<ellipse cx='320' cy='150' rx='240' ry='120' fill='url(#lamp)'/>" +
+    "<g stroke='#E8C36B' stroke-opacity='.35' fill='none'><path d='M60 96h520M84 96v330M556 96v330'/><path d='M50 88q270 -26 540 0'/></g>" +
+    "<rect x='120' y='150' width='400' height='250' fill='#0E0C18' stroke='#E8C36B' stroke-opacity='.25'/>" +
+    "<g fill='#2A2740'><rect x='170' y='" + (lift + 10) + "' width='12' height='" + (400 - lift) + "'/><rect x='458' y='" + (lift + 10) + "' width='12' height='" + (400 - lift) + "'/></g>" +
+    "<g transform='translate(0," + (lift - 316) + ")'>" +
+    "<path d='M204 382l6-24q8-16 30-20l38-24q34-14 74-8l52 22q28 6 38 22l6 32z' fill='#3B3550' stroke='" + accent + "' stroke-opacity='.7'/>" +
+    "<path d='M252 340l26-18q26-10 54-6l30 16z' fill='#6E7BA8' opacity='.7'/>" +
+    "<circle cx='254' cy='384' r='21' fill='#15121F' stroke='#E8C36B' stroke-opacity='.5'/><circle cx='394' cy='384' r='21' fill='#15121F' stroke='#E8C36B' stroke-opacity='.5'/>" +
+    "<circle cx='254' cy='384' r='8' fill='#E8C36B' opacity='.6'/><circle cx='394' cy='384' r='8' fill='#E8C36B' opacity='.6'/></g>" +
+    "<rect x='0' y='400' width='640' height='80' fill='#0A0910'/><path d='M0 400h640' stroke='#E8C36B' stroke-opacity='.3'/>" +
+    "<text x='40' y='72' font-family='serif' font-size='46' fill='" + accent + "' opacity='.9'>" + kanji + "</text>" +
+    "<text x='40' y='448' font-family='sans-serif' font-size='19' fill='#EFE6DA'>" + label + "</text>" +
+    "<text x='600' y='448' font-family='monospace' font-size='14' fill='#E8C36B' text-anchor='end'>GARAGE77 / PHOTO</text>" +
+    "</svg>";
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}
+const DEMO_PHOTOS = {
+  "demo-01-priemka.svg": demoPhoto(1, "受", "Приёмка автомобиля · пост №4", "#E2483D"),
+  "demo-02-defektovka.svg": demoPhoto(2, "検", "Дефектовка · замер узлов", "#4EA8FF"),
+  "demo-03-raboty.svg": demoPhoto(3, "工", "Выполненные работы · моментная затяжка", "#F0A93B"),
+  "demo-04-stend.svg": demoPhoto(4, "完", "Проверка на стенде · готово к выдаче", "#63C08A")
+};
+const SEED_ORDERS = [
+  { id:1042, name:"Иван Петров", phone:"+79001234567", car:"BMW 320i", plate:"А123ВС 38", svc:"Замена ремня ГРМ", price:6500, time:240,
+    date:"2026-11-20", slot:"10:00", status:"done", email:"ivan@mail.ru", comment:"Стук при холодном пуске", created:"2026-11-18T09:12:00", post:4,
+    log:[["18.11 09:12","Заявка создана"],["18.11 09:25","Подтверждена администратором"],["20.11 10:04","Принята в работу, пост №4"],["20.11 16:40","Работы завершены, выдана"]],
+    photos:[{id:1,file:"demo-01-priemka.svg",caption:"Приёмка автомобиля"},{id:2,file:"demo-02-defektovka.svg",caption:"Дефектовка"},{id:3,file:"demo-03-raboty.svg",caption:"Выполненные работы"},{id:4,file:"demo-04-stend.svg",caption:"Проверка на стенде"}] },
+  { id:1043, name:"Иван Петров", phone:"+79001234567", car:"BMW 320i", plate:"А123ВС 38", svc:"Замена масла ДВС + фильтр", price:800, time:40,
+    date:"2026-11-24", slot:"09:00", status:"confirm", email:"ivan@mail.ru", comment:"Масло своё, 5W-30", created:"2026-11-21T18:40:00", post:null,
+    log:[["21.11 18:40","Заявка создана"],["21.11 18:52","Подтверждена администратором"]], photos:[] },
+  { id:1044, name:"Марина Козлова", phone:"+79005553535", car:"Kia Rio", plate:"В777ОР 38", svc:"Развал-схождение 3D", price:1900, time:60,
+    date:"2026-11-22", slot:"12:00", status:"work", email:"", comment:"Тянет вправо после ямы", created:"2026-11-21T11:05:00", post:2,
+    log:[["21.11 11:05","Заявка создана"],["21.11 11:15","Подтверждена"],["22.11 12:02","В работе, пост №2"]],
+    photos:[{id:5,file:"demo-01-priemka.svg",caption:"Приёмка автомобиля"},{id:6,file:"demo-02-defektovka.svg",caption:"Дефектовка"}] },
+  { id:1045, name:"Сергей Дронов", phone:"+79008881122", car:"Toyota Camry", plate:"Е001КХ 138", svc:"Замена тормозных дисков + колодки", price:2800, time:120,
+    date:"2026-11-23", slot:"14:00", status:"new", email:"", comment:"", created:"2026-11-22T08:15:00", post:null,
+    log:[["22.11 08:15","Заявка создана"]], photos:[] }
+];
+
+/* ============================== ЛОКАЛЬНАЯ БД (демо-режим) ============================== */
+const Demo = {
+  db: null,
+  init(){
+    if (this.db) return;
+    const saved = store.get("g77_demo_v1", null);
+    if (saved && saved.v === 1 && Array.isArray(saved.orders)) { this.db = saved; return; }
+    this.db = {
+      v: 1, seq: 1046, pseq: 100,
+      users: [
+        { id:1, name:"Администратор", phone:"+74957777777", email:"admin@garage77.ru", pass:"admin123", role:"admin" },
+        { id:2, name:"Иван Петров", phone:"+79001234567", email:"ivan@mail.ru", pass:"client123", role:"client" }
+      ],
+      sessions: {}, orders: JSON.parse(JSON.stringify(SEED_ORDERS)), files: {}
+    };
+    this.save();
+  },
+  save(){ store.set("g77_demo_v1", this.db); },
+  user(token){ const uid = this.db.sessions[token]; return this.db.users.filter(u => u.id === uid)[0] || null; },
+  pub(u){ return u ? { id:u.id, name:u.name, phone:u.phone, email:u.email, role:u.role } : null; },
+  find(id){ return this.db.orders.filter(o => o.id === Number(id))[0] || null; },
+  out(o){ if (!o) return null; const c = JSON.parse(JSON.stringify(o)); c.photos = (c.photos || []).map(p => ({ id:p.id, file:p.file, caption:p.caption })); return c; },
+  catalog(){
+    const services = SEED_SERVICES.map(s => ({ id:s.id, name:s.name, desc:s.desc, tag:s.tag }));
+    return { services: services, prices: SEED_PRICES.slice(), reviews: SEED_REVIEWS.slice(), stats: SEED_STATS.slice() };
+  },
+  busy(date){
+    const taken = {};
+    this.db.orders.forEach(o => { if (o.date === date && o.status !== "cancel") taken[o.slot] = 1; });
+    let seed = 0; for (let i = 0; i < date.length; i++) seed += date.charCodeAt(i);
+    SLOT_TIMES.forEach((t, i) => { if (((seed + i * 5) % 11) < 3) taken[t] = 1; });
+    return Object.keys(taken);
+  },
+  owns(u, o){ return !!u && (u.role === "admin" || (o.email && o.email.toLowerCase() === u.email.toLowerCase()) || (o.phone && o.phone === u.phone)); },
+  handle(method, path, body, token){
+    this.init();
+    const qi = path.indexOf("?");
+    const p = qi < 0 ? path : path.slice(0, qi);
+    const qs = new URLSearchParams(qi < 0 ? "" : path.slice(qi + 1));
+    const b = body || {};
+    const u = this.user(token);
+    const db = this.db;
+    const err = (status, message, fields) => { const e = new Error(message); e.status = status; e.fields = fields || null; return e; };
+    const needUser = () => { if (!u) throw err(401, "Требуется вход в систему"); return u; };
+    const needAdmin = () => { needUser(); if (u.role !== "admin") throw err(403, "Только для администратора"); return u; };
+    let m;
+    if (method === "GET" && p === "/api/health") return { ok:true, db:"browser://localStorage", time:new Date().toISOString() };
+    if (method === "GET" && p === "/api/catalog") return this.catalog();
+    if (method === "GET" && p === "/api/session") return { user: this.pub(u) };
+    if (method === "POST" && p === "/api/auth/login") {
+      const email = String(b.email || "").trim().toLowerCase();
+      const found = db.users.filter(x => x.email.toLowerCase() === email && x.pass === String(b.pass || ""))[0];
+      if (!found) throw err(401, "Неверный email или пароль");
+      const tk = hexId(); db.sessions[tk] = found.id; this.save();
+      return { token: tk, user: this.pub(found) };
+    }
+    if (method === "POST" && p === "/api/auth/register") {
+      const name = String(b.name || "").trim(), email = String(b.email || "").trim().toLowerCase();
+      const phone = "+" + String(b.phone || "").replace(/\D/g, "");
+      if (name.length < 2) throw err(400, "Укажите имя");
+      if (phone.replace(/\D/g, "").length !== 11) throw err(400, "Телефон должен содержать 11 цифр");
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) throw err(400, "Некорректный email");
+      if (String(b.pass || "").length < 6) throw err(400, "Пароль минимум 6 символов");
+      if (db.users.filter(x => x.email.toLowerCase() === email)[0]) throw err(409, "Email уже зарегистрирован");
+      const nu = { id: db.users.length + 1, name: name, phone: phone, email: email, pass: String(b.pass), role: "client" };
+      db.users.push(nu);
+      const tk = hexId(); db.sessions[tk] = nu.id; this.save();
+      return { token: tk, user: this.pub(nu) };
+    }
+    if (method === "POST" && p === "/api/auth/logout") { delete db.sessions[token]; this.save(); return { ok:true }; }
+    if (method === "GET" && p === "/api/slots") {
+      const date = qs.get("date") || "";
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw err(400, "Некорректная дата");
+      return { date: date, times: SLOT_TIMES.slice(), busy: this.busy(date) };
+    }
+    if (method === "GET" && p === "/api/orders") {
+      needUser();
+      const list = db.orders.filter(o => u.role === "admin" || this.owns(u, o)).slice().sort((a, c) => String(c.created).localeCompare(String(a.created)));
+      return { orders: list.map(o => this.out(o)) };
+    }
+    if (method === "POST" && p === "/api/orders") {
+      const v = validateOrder(b, SEED_PRICES);
+      if (Object.keys(v.errors).length) throw err(400, "Проверьте поля формы", v.errors);
+      if (this.busy(v.value.date).indexOf(v.value.slot) >= 0) throw err(409, "Слот " + v.value.slot + " на " + v.value.date + " уже занят — выберите другое время");
+      const o = {
+        id: db.seq++, name: v.value.name, phone: v.value.phone, car: v.value.car, plate: v.value.plate,
+        svc: v.price.name, price: v.price.price, time: v.price.time, date: v.value.date, slot: v.value.slot,
+        status: "new", email: u ? u.email : v.value.email, comment: v.value.comment,
+        created: new Date().toISOString(), post: null, log: [[stampNow(), "Заявка создана"]], photos: []
+      };
+      db.orders.push(o); this.save();
+      return { order: this.out(o) };
+    }
+    if ((m = /^\/api\/orders\/(\d+)$/.exec(p))) {
+      const o = this.find(m[1]);
+      if (method === "GET") {
+        if (!o) throw err(404, "Заявка не найдена");
+        if (!this.owns(u, o)) throw err(403, "Нет доступа к этому заказ-наряду");
+        return { order: this.out(o), canManage: !!(u && u.role === "admin") };
+      }
+      if (method === "DELETE") {
+        needAdmin();
+        if (!o) throw err(404, "Заявка не найдена");
+        db.orders = db.orders.filter(x => x.id !== o.id); this.save();
+        return { removed: this.out(o) };
+      }
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/status$/.exec(p)) && method === "PATCH") {
+      needAdmin();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      const s = String(b.status || "");
+      if (!ST[s]) throw err(400, "Неизвестный статус");
+      if (o.status !== s) { o.status = s; o.log.push([stampNow(), "Статус: " + ST[s].l + " (админ)"]); if (s === "work" && !o.post) o.post = 1 + (o.id % 8); this.save(); }
+      return { order: this.out(o) };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/advance$/.exec(p)) && method === "POST") {
+      needAdmin();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      const i = FLOW.indexOf(o.status);
+      if (i < 0 || i >= FLOW.length - 1) throw err(409, "Статус уже финальный");
+      o.status = FLOW[i + 1]; o.log.push([stampNow(), "Статус: " + ST[o.status].l]);
+      if (o.status === "work" && !o.post) o.post = 1 + (o.id % 8);
+      this.save(); return { order: this.out(o) };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/cancel$/.exec(p)) && method === "POST") {
+      needUser();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      if (!this.owns(u, o)) throw err(403, "Нет доступа");
+      if (o.status === "cancel" || o.status === "done") throw err(409, "Заявку уже нельзя отменить");
+      const prev = o.status;
+      o.status = "cancel"; o.log.push([stampNow(), u.role === "admin" ? "Заявка отменена (админ)" : "Заявка отменена клиентом"]);
+      this.save(); return { order: this.out(o), previous: prev };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/uncancel$/.exec(p)) && method === "POST") {
+      needUser();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      if (!this.owns(u, o)) throw err(403, "Нет доступа");
+      if (o.status !== "cancel") throw err(409, "Заявка не отменена");
+      const back = FLOW.indexOf(b.status) >= 0 ? b.status : "new";
+      o.status = back; o.log.push([stampNow(), "Восстановлена (" + ST[back].l + ")"]);
+      this.save(); return { order: this.out(o) };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/restore$/.exec(p)) && method === "POST") {
+      needAdmin();
+      if (this.find(m[1])) throw err(409, "Заявка уже существует");
+      if (!b.name || !b.svc || !b.date || !b.slot) throw err(400, "Нет данных для восстановления");
+      const o = {
+        id: Number(m[1]), name: b.name, phone: b.phone || "", car: b.car || "", plate: b.plate || "", svc: b.svc,
+        price: Number(b.price) || 0, time: Number(b.time) || 0, date: b.date, slot: b.slot,
+        status: ST[b.status] ? b.status : "new", email: b.email || "", comment: b.comment || "",
+        created: b.created || new Date().toISOString(), post: b.post || null,
+        log: Array.isArray(b.log) ? b.log.slice() : [], photos: Array.isArray(b.photos) ? b.photos.slice() : []
+      };
+      o.log.push([stampNow(), "Восстановлена (" + ST[o.status].l + ")"]);
+      db.orders.push(o);
+      if (o.id >= db.seq) db.seq = o.id + 1;
+      this.save(); return { order: this.out(o) };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/photos$/.exec(p)) && method === "POST") {
+      needAdmin();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      const raw = String(b.dataUrl || "");
+      if (!/^data:image\/[\w.+-]+;base64,/.test(raw) && raw.indexOf("data:image/svg+xml") !== 0) throw err(400, "Ожидается data:image/...;base64,...");
+      const file = "local-" + o.id + "-" + Date.now().toString(36) + ".img";
+      db.files[file] = raw;
+      const ph = { id: db.pseq++, file: file, caption: String(b.caption || "").slice(0, 120) };
+      o.photos.push(ph);
+      o.log.push([stampNow(), "Добавлено фото: " + (ph.caption || "без подписи")]);
+      this.save();
+      return { photo: ph, url: raw };
+    }
+    if ((m = /^\/api\/orders\/(\d+)\/photos\/(\d+)$/.exec(p)) && method === "DELETE") {
+      needAdmin();
+      const o = this.find(m[1]); if (!o) throw err(404, "Заявка не найдена");
+      const ph = o.photos.filter(x => x.id === Number(m[2]))[0];
+      if (!ph) throw err(404, "Фото не найдено");
+      o.photos = o.photos.filter(x => x.id !== ph.id);
+      delete db.files[ph.file];
+      o.log.push([stampNow(), "Фото удалено: " + (ph.caption || ph.file)]);
+      this.save(); return { ok:true };
+    }
+    throw err(404, "Метод API не найден: " + method + " " + p);
+  }
+};
+function photoUrl(p){
+  if (!p) return "";
+  const f = String(p.file || "");
+  if (f.indexOf("data:") === 0) return f;
+  if (Demo.db && Demo.db.files && Demo.db.files[f]) return Demo.db.files[f];
+  if (DEMO_PHOTOS[f] && Api.mode !== "server") return DEMO_PHOTOS[f];
+  return "/uploads/" + encodeURIComponent(f);
+}
+function photoFallback(p){
+  const cap = String((p && p.caption) || "фотоотчёт");
+  const k = cap.indexOf("Дефект") >= 0 ? "検" : cap.indexOf("стенд") >= 0 ? "完" : cap.indexOf("работ") >= 0 ? "工" : "受";
+  return demoPhoto(2, k, cap, "#E2483D");
+}
+
+/* ============================== API ============================== */
+const Api = {
+  mode: "probe",
+  token: store.get("g77_token", ""),
+  setMode(m){
+    if (this.mode === m) return;
+    this.mode = m;
+    if (m === "demo") Demo.init();
+    paintDb();
+  },
+  async call(method, path, body){
+    if (this.mode === "demo") return Demo.handle(method, path, body, this.token);
+    let res;
+    try {
+      const headers = {};
+      if (body !== undefined) headers["Content-Type"] = "application/json";
+      if (this.token) headers["Authorization"] = "Bearer " + this.token;
+      res = await fetch(path, { method: method, headers: headers, body: body !== undefined ? JSON.stringify(body) : undefined });
+    } catch (e) {
+      this.setMode("demo");
+      return Demo.handle(method, path, body, this.token);
+    }
+    const text = await res.text();
+    let data = null;
+    try { data = text ? JSON.parse(text) : null; } catch (e) { data = null; }
+    if (data === null && !res.ok) { this.setMode("demo"); return Demo.handle(method, path, body, this.token); }
+    if (!res.ok) { const er = new Error((data && data.error) || ("Ошибка " + res.status)); er.status = res.status; er.fields = (data && data.fields) || null; throw er; }
+    return data || {};
+  },
+  async probe(){
+    try {
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 2500);
+      const r = await fetch("/api/health", { signal: ctl.signal, cache: "no-store" });
+      clearTimeout(timer);
+      const j = await r.json();
+      this.setMode(j && j.ok ? "server" : "demo");
+    } catch (e) { this.setMode("demo"); }
+  }
+};
+function paintDb(){
+  const chip = byId("dbChip"); if (!chip) return;
+  const srv = Api.mode === "server";
+  chip.innerHTML = '<i class="dot ' + (srv ? "live" : "warn") + '"></i><span>DB: ' + (srv ? "SQLite ✓" : "демо") + "</span>";
+  chip.title = srv ? "Данные читаются и пишутся в db/garage77.db через локальный сервер" : "Сервер не запущен — работает встроенная демо-база в браузере. Запустите: npm start";
+}
+
+/* ============================== ВАЛИДАЦИЯ ============================== */
+const PLATE_MAP = { A:"А", B:"В", E:"Е", K:"К", M:"М", H:"Н", O:"О", P:"Р", C:"С", T:"Т", Y:"У", X:"Х" };
+const PLATE_L = "АВЕКМНОРСТУХ";
+function phoneDigits(v){ let d = String(v || "").replace(/\D/g, ""); if (d.length && d[0] === "8") d = "7" + d.slice(1); if (d.length && d[0] !== "7") d = "7" + d; return d.slice(0, 11); }
+function maskPhone(v){
+  const d = phoneDigits(v), r = d.slice(1);
+  if (!r.length) return d.length ? "+7" : "";
+  let out = "+7 (" + r.slice(0, 3);
+  if (r.length >= 3) out += ")";
+  if (r.length > 3) out += " " + r.slice(3, 6);
+  if (r.length > 6) out += "-" + r.slice(6, 8);
+  if (r.length > 8) out += "-" + r.slice(8, 10);
+  return out;
+}
+function maskPlate(v){
+  const chars = String(v || "").toUpperCase().split("").map(c => PLATE_MAP[c] || c);
+  let i = 0;
+  const take = (kind, max) => {
+    let s = "";
+    while (i < chars.length && s.length < max) {
+      const c = chars[i]; i++;
+      const isL = PLATE_L.indexOf(c) >= 0, isD = c >= "0" && c <= "9";
+      if ((kind === "L" && isL) || (kind === "D" && isD)) s += c;
+    }
+    return s;
+  };
+  const a = take("L", 1); if (!a) return "";
+  const b = take("D", 3);
+  const c = take("L", 2);
+  const d = take("D", 3);
+  return a + b + c + (d ? " " + d : "");
+}
+const validName = v => /^[А-Яа-яЁёA-Za-z\s-]{2,60}$/.test(String(v || "").trim());
+const validPhone = v => phoneDigits(v).length === 11;
+const validEmail = v => /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(String(v || "").trim());
+const validPlate = v => !String(v || "").trim() || /^[АВЕКМНОРСТУХ]\d{3}[АВЕКМНОРСТУХ]{2}\d{2,3}$/.test(String(v).replace(/\s/g, ""));
+function validateOrder(b, prices){
+  const errors = {};
+  const name = String(b.name || "").trim();
+  const phone = "+" + phoneDigits(b.phone);
+  const car = String(b.car || "").trim();
+  const plate = maskPlate(b.plate);
+  const date = String(b.date || ""), slot = String(b.slot || ""), comment = String(b.comment || "").trim().slice(0, 400);
+  if (!validName(name)) errors.name = "Укажите имя (минимум 2 буквы)";
+  if (!validPhone(phone)) errors.phone = "Телефон должен содержать 11 цифр";
+  if (car.length < 2) errors.car = "Укажите марку и модель";
+  if (!validPlate(plate)) errors.plate = "Формат госномера: А123ВС 38";
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) errors.date = "Выберите дату";
+  else if (date < todayStr()) errors.date = "Дата в прошлом";
+  if (SLOT_TIMES.indexOf(slot) < 0) errors.slot = "Выберите время из списка";
+  const price = (prices || []).filter(p => p.id === Number(b.serviceId))[0];
+  if (!price) errors.serviceId = "Выберите услугу из прайса";
+  return { errors: errors, price: price, value: { name: name, phone: phone, car: car, plate: plate, date: date, slot: slot, comment: comment, email: String(b.email || "").trim() } };
+}
+
+/* ============================== ЗВУК ============================== */
+const Sound = {
+  on: store.get("g77_sound", true),
+  ctx: null,
+  ensure(){
+    if (!this.on) return null;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return null;
+    if (!this.ctx) this.ctx = new AC();
+    if (this.ctx.state === "suspended") this.ctx.resume();
+    return this.ctx;
+  },
+  tone(freq, dur, type, vol, delay, slide){
+    const ctx = this.ensure(); if (!ctx) return;
+    const t0 = ctx.currentTime + (delay || 0);
+    const osc = ctx.createOscillator(), g = ctx.createGain(), f = ctx.createBiquadFilter();
+    osc.type = type || "triangle";
+    osc.frequency.setValueAtTime(freq, t0);
+    if (slide) osc.frequency.exponentialRampToValueAtTime(Math.max(40, slide), t0 + dur);
+    f.type = "lowpass"; f.frequency.setValueAtTime(3200, t0);
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(vol || 0.06, t0 + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    osc.connect(f); f.connect(g); g.connect(ctx.destination);
+    osc.start(t0); osc.stop(t0 + dur + 0.05);
+  },
+  noise(dur, vol, freq){
+    const ctx = this.ensure(); if (!ctx) return;
+    const len = Math.floor(ctx.sampleRate * dur);
+    const buf = ctx.createBuffer(1, len, ctx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < len; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+    const src = ctx.createBufferSource(); src.buffer = buf;
+    const f = ctx.createBiquadFilter(); f.type = "bandpass"; f.frequency.value = freq || 900;
+    const g = ctx.createGain(); g.gain.value = vol || 0.05;
+    src.connect(f); f.connect(g); g.connect(ctx.destination);
+    src.start();
+  },
+  click(){ this.tone(1180, 0.09, "triangle", 0.045, 0, 760); },
+  hover(){ this.tone(1560, 0.05, "sine", 0.02); },
+  ok(){ this.tone(587.33, 0.22, "triangle", 0.06); this.tone(880, 0.3, "triangle", 0.05, 0.09); this.tone(1174.66, 0.42, "sine", 0.04, 0.18); },
+  err(){ this.tone(196, 0.28, "sawtooth", 0.05, 0, 92); this.noise(0.16, 0.03, 260); },
+  open(){ this.tone(1046.5, 0.3, "sine", 0.035); this.tone(1567.98, 0.36, "sine", 0.022, 0.05); },
+  close(){ this.tone(784, 0.18, "sine", 0.03, 0, 520); },
+  taiko(){ this.tone(90, 0.42, "sine", 0.11, 0, 52); this.noise(0.2, 0.05, 180); },
+  step(){ this.tone(659.25, 0.16, "triangle", 0.05); this.tone(987.77, 0.22, "triangle", 0.04, 0.08); }
+};
+function paintSound(){
+  const b = byId("sndBtn"); if (!b) return;
+  b.innerHTML = '<i>音</i><span>SND:' + (Sound.on ? "ON" : "OFF") + "</span>";
+  b.style.color = Sound.on ? "" : "#7E7689";
+  b.title = Sound.on ? "Звук включён — нажмите, чтобы выключить" : "Звук выключен — нажмите, чтобы включить";
+}
+
+/* ============================== ТОСТЫ ============================== */
+function toast(msg, kind, action){
+  const box = byId("toasts"); if (!box) return;
+  const k = kind || "info";
+  const icons = { good:"良", bad:"悪", info:"知", warn:"注" };
+  const titles = { good:"Готово", bad:"Ошибка", info:"Информация", warn:"Внимание" };
+  const node = document.createElement("div");
+  node.className = "toast " + k;
+  const life = action ? 9000 : 5200;
+  node.innerHTML = '<span class="ic">' + (icons[k] || "知") + '</span><span class="msg"><b>' + esc(titles[k] || "Информация") + "</b>" + esc(msg) + "</span>" +
+    (action ? '<button class="act" type="button">' + esc(action.label) + "</button>" : "") +
+    '<button class="tx" type="button" aria-label="Закрыть">✕</button><i class="bar" style="animation-duration:' + life + 'ms"></i>';
+  box.appendChild(node);
+  let timer = setTimeout(kill, life);
+  function kill(){ clearTimeout(timer); node.classList.add("out"); setTimeout(() => { if (node.parentNode) node.parentNode.removeChild(node); }, 300); }
+  $(".tx", node).addEventListener("click", kill);
+  const act = $(".act", node);
+  if (act) act.addEventListener("click", async () => { kill(); try { await action.run(); } catch (e) { toast(e.message || "Не получилось", "bad"); } });
+  while (box.children.length > 4) box.removeChild(box.firstChild);
+}
+
+/* ============================== ГРАФИКА: ДРАКОН / САКУРА ============================== */
+function bez(p0, p1, p2, p3, t){
+  const u = 1 - t;
+  return { x: u*u*u*p0[0] + 3*u*u*t*p1[0] + 3*u*t*t*p2[0] + t*t*t*p3[0],
+           y: u*u*u*p0[1] + 3*u*u*t*p1[1] + 3*u*t*t*p2[1] + t*t*t*p3[1] };
+}
+function sampleSegs(segs, steps){
+  const pts = [];
+  segs.forEach((sg, si) => {
+    for (let i = 0; i <= steps; i++) {
+      if (si > 0 && i === 0) continue;
+      pts.push(bez(sg[0], sg[1], sg[2], sg[3], i / steps));
+    }
+  });
+  return pts;
+}
+function dragonSVG(id, segs, opt){
+  const o = opt || {};
+  const pts = sampleSegs(segs, 46);
+  const n = pts.length;
+  const widthAt = t => 2 + 16 * Math.sin(Math.PI * Math.pow(t, 0.86) * 0.94);
+  const left = [], right = [], norms = [];
+  for (let i = 0; i < n; i++) {
+    const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
+    const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy) || 1;
+    const nx = -dy / len, ny = dx / len, w = widthAt(i / (n - 1));
+    norms.push({ x: nx, y: ny, w: w, tx: dx / len, ty: dy / len });
+    left.push({ x: pts[i].x + nx * w, y: pts[i].y + ny * w });
+    right.push({ x: pts[i].x - nx * w, y: pts[i].y - ny * w });
+  }
+  const poly = left.map(p => p.x.toFixed(1) + "," + p.y.toFixed(1)).join("L") + "L" +
+    right.slice().reverse().map(p => p.x.toFixed(1) + "," + p.y.toFixed(1)).join("L");
+  let fins = "", scales = "", legs = "";
+  for (let i = 4; i < n - 6; i += 4) {
+    const p = pts[i], nm = norms[i], h = nm.w * 0.85 + 3;
+    const a = left[Math.max(0, i - 3)], b = left[Math.min(n - 1, i + 3)];
+    fins += "<path d='M" + a.x.toFixed(1) + "," + a.y.toFixed(1) + "L" + (p.x + nm.x * h).toFixed(1) + "," + (p.y + nm.y * h).toFixed(1) +
+      "L" + b.x.toFixed(1) + "," + b.y.toFixed(1) + "Z' fill='url(#" + id + "-fin)' opacity='.85'/>";
+  }
+  for (let i = 3; i < n - 3; i += 3) {
+    const p = pts[i], nm = norms[i], l = left[i], r = right[i];
+    const cx = p.x - nm.tx * nm.w * 0.9, cy = p.y - nm.ty * nm.w * 0.9;
+    scales += "<path d='M" + l.x.toFixed(1) + "," + l.y.toFixed(1) + "Q" + cx.toFixed(1) + "," + cy.toFixed(1) + " " + r.x.toFixed(1) + "," + r.y.toFixed(1) +
+      "' fill='none' stroke='#FFD9A0' stroke-opacity='.22' stroke-width='.9'/>";
+  }
+  [0.34, 0.68].forEach(t => {
+    const i = Math.floor(t * (n - 1)), p = pts[i], nm = norms[i];
+    const bx = p.x - nm.x * nm.w, by = p.y - nm.y * nm.w;
+    legs += "<g stroke='#8E1B14' stroke-width='2' fill='#C33A2E'>" +
+      "<path d='M" + bx.toFixed(1) + "," + by.toFixed(1) + "q" + (-nm.x * 10 - 6).toFixed(1) + "," + (-nm.y * 10 + 12).toFixed(1) + " " + (-nm.x * 6 - 14).toFixed(1) + "," + (-nm.y * 6 + 22).toFixed(1) + "l6,4l-3,-8l7,3l-4,-9' stroke-linejoin='round'/></g>";
+  });
+  const head = pts[n - 1], hn = norms[n - 1];
+  const ang = Math.atan2(hn.ty, hn.tx) * 180 / Math.PI;
+  const tail = pts[0];
+  const headG = "<g transform='translate(" + head.x.toFixed(1) + "," + head.y.toFixed(1) + ") rotate(" + ang.toFixed(1) + ")'>" +
+    "<path d='M-10,-13 C4,-19 22,-17 34,-9 L46,-2 L44,7 L30,13 L8,16 L-8,9 Z' fill='url(#" + id + "-body)' stroke='#4A0F0C' stroke-width='1.4'/>" +
+    "<path d='M12,10 L42,7 L36,17 L14,18 Z' fill='#B3241C' stroke='#4A0F0C' stroke-width='1'/>" +
+    "<path d='M30,12 l3,5 l3,-5 l3,5 l3,-6' fill='none' stroke='#FFF3E2' stroke-width='1.6'/>" +
+    "<path d='M2,-13 L-10,-32 L-1,-27 L8,-15 Z' fill='#E8C36B'/>" +
+    "<path d='M12,-14 L6,-34 L14,-27 L18,-15 Z' fill='#FFE7A8'/>" +
+    "<path d='M-8,-8 C-24,-20 -34,-10 -46,-22 C-34,-6 -26,-2 -12,2 Z' fill='#E8C36B' opacity='.85'/>" +
+    "<path d='M-8,4 C-26,4 -34,14 -48,10 C-34,20 -22,16 -8,12 Z' fill='#E2483D' opacity='.8'/>" +
+    "<circle cx='22' cy='-5' r='4.2' fill='#FFF3E2'/><circle cx='23.4' cy='-5' r='2.1' fill='#2A0C0A'/>" +
+    "<path d='M44,1 C64,-8 82,-18 104,-12' fill='none' stroke='#E8C36B' stroke-width='1.8' stroke-linecap='round' opacity='.9'/>" +
+    "<path d='M42,6 C62,10 78,20 98,16' fill='none' stroke='#F4A7C0' stroke-width='1.5' stroke-linecap='round' opacity='.8'/>" +
+    "<circle cx='47' cy='-1' r='1.6' fill='#4A0F0C'/>" +
+    "</g>";
+  const tailG = "<g transform='translate(" + tail.x.toFixed(1) + "," + tail.y.toFixed(1) + ")'>" +
+    "<path d='M0,0 C-16,-10 -28,-4 -40,-14 C-30,4 -18,6 -4,6 Z' fill='#E8C36B' opacity='.8'/>" +
+    "<path d='M0,2 C-14,8 -26,18 -40,14 C-28,22 -14,16 -2,10 Z' fill='#E2483D' opacity='.75'/></g>";
+  const pearl = "<circle cx='" + (head.x + hn.tx * 78).toFixed(1) + "' cy='" + (head.y + hn.ty * 78 - 16).toFixed(1) + "' r='9' fill='url(#" + id + "-pearl)'>" +
+    (o.animate ? "<animate attributeName='r' values='9;12;9' dur='3.4s' repeatCount='indefinite'/>" : "") + "</circle>";
+  return "<defs>" +
+    "<linearGradient id='" + id + "-body' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#FF6A52'/><stop offset='.55' stop-color='#E2483D'/><stop offset='1' stop-color='#8E1B14'/></linearGradient>" +
+    "<linearGradient id='" + id + "-fin' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#FFE7A8'/><stop offset='1' stop-color='#E2483D'/></linearGradient>" +
+    "<radialGradient id='" + id + "-pearl'><stop offset='0' stop-color='#FFF6E2'/><stop offset='.6' stop-color='#E8C36B'/><stop offset='1' stop-color='#E2483D' stop-opacity='.2'/></radialGradient>" +
+    "</defs>" +
+    "<g class='dragon'>" + fins + legs + "<path d='M" + poly + "Z' fill='url(#" + id + "-body)' stroke='#4A0F0C' stroke-width='1.2'/>" +
+    scales + tailG + headG + pearl + "</g>";
+}
+function sakuraBranch(){
+  const segs = [[[0, 40], [70, 20], [130, 70], [200, 52]], [[200, 52], [250, 40], [280, 84], [330, 74]]];
+  const pts = sampleSegs(segs, 22);
+  let path = "<path d='M0,40 C70,20 130,70 200,52 C250,40 280,84 330,74' fill='none' stroke='#3A2A2E' stroke-width='5' stroke-linecap='round'/>" +
+    "<path d='M120,58 C140,86 160,92 186,104' fill='none' stroke='#3A2A2E' stroke-width='3' stroke-linecap='round'/>" +
+    "<path d='M240,50 C252,26 268,20 288,16' fill='none' stroke='#3A2A2E' stroke-width='3' stroke-linecap='round'/>";
+  const spots = [];
+  for (let i = 2; i < pts.length; i += 3) spots.push(pts[i]);
+  spots.push({ x: 186, y: 104 }, { x: 168, y: 96 }, { x: 288, y: 16 }, { x: 272, y: 22 });
+  spots.forEach((p, i) => {
+    const r = 5 + (i % 3) * 1.4, col = i % 4 === 0 ? "#FFD3E2" : "#F4A7C0";
+    let petals = "";
+    for (let k = 0; k < 5; k++) petals += "<ellipse cx='0' cy='" + (-r) + "' rx='" + (r * 0.62).toFixed(1) + "' ry='" + r + "' fill='" + col + "' transform='rotate(" + (k * 72) + ")'/>";
+    path += "<g transform='translate(" + p.x.toFixed(1) + "," + p.y.toFixed(1) + ") rotate(" + (i * 37) + ")' opacity='.92'>" + petals +
+      "<circle r='1.9' fill='#E8C36B'/></g>";
+  });
+  return path;
+}
+function buildScene(){
+  const dl = byId("dragonLayer");
+  if (dl) dl.innerHTML = dragonSVG("drg", [
+    [[54, 168], [110, 60], [206, 52], [258, 112]],
+    [[258, 112], [304, 164], [366, 176], [414, 122]],
+    [[414, 122], [456, 76], [520, 58], [566, 96]]
+  ], { animate: !REDUCED });
+  const sb = byId("sakuraLayer");
+  if (sb) sb.innerHTML = sakuraBranch();
+  const fw = byId("ftrDragon");
+  if (fw) fw.innerHTML = dragonSVG("fdr", [
+    [[20, 120], [90, 40], [180, 40], [230, 92]],
+    [[230, 92], [280, 140], [340, 146], [392, 96]]
+  ], {});
+  const bw = byId("bookDragon");
+  if (bw) bw.innerHTML = dragonSVG("bdr", [
+    [[20, 150], [120, 40], [260, 40], [340, 120]],
+    [[340, 120], [420, 196], [520, 190], [600, 110]]
+  ], {});
+  if (REDUCED) $$("#scene animate").forEach(a => { if (a.parentNode) a.parentNode.removeChild(a); });
+}
+
+/* ============================== СОСТОЯНИЕ ============================== */
+const S = {
+  catalog: { services: [], prices: [], reviews: [], stats: [] },
+  user: null, orders: [], pq: "", pcat: "all", psort: { key: "id", dir: 1 },
+  cq: "", cstatus: "all", csort: "new", sel: new Set(),
+  slots: { date: "", times: [], busy: [] }, selSlot: "",
+  detail: null, canManage: false, pending: [], lb: { list: [], i: 0 }
+};
+let revealObs = null, navObs = null, openStack = [];
+
+/* ============================== РЕНДЕР КАТАЛОГА ============================== */
+function crest(key, i){
+  const k = KANJI[key] || "車";
+  const hues = ["#E2483D", "#E8C36B", "#4EA8FF", "#63C08A", "#F4A7C0", "#F0A93B"];
+  const c = hues[i % hues.length];
+  const n = 6 + (i % 3) * 2;
+  let petals = "";
+  for (let j = 0; j < n; j++) petals += "<ellipse cx='31' cy='12.5' rx='4.2' ry='7.4' fill='" + c + "' opacity='.26' transform='rotate(" + ((360 / n) * j).toFixed(1) + " 31 31)'/>";
+  return "<svg class='crest' viewBox='0 0 62 62' aria-hidden='true'><circle cx='31' cy='31' r='29' fill='rgba(255,255,255,.03)' stroke='" + c + "' stroke-opacity='.5'/>" +
+    petals + "<circle cx='31' cy='31' r='19' fill='#0C0A14' stroke='" + c + "' stroke-opacity='.75'/>" +
+    "<text x='31' y='39' text-anchor='middle' font-family='Shippori Mincho, serif' font-size='21' fill='" + c + "'>" + k + "</text></svg>";
+}
+function observeReveals(root){
+  if (!revealObs) return;
+  $$(".reveal", root || document).forEach(n => { if (!n.classList.contains("in")) revealObs.observe(n); });
+}
+function renderServices(){
+  const grid = byId("svcGrid"); if (!grid) return;
+  const prices = S.catalog.prices;
+  grid.innerHTML = S.catalog.services.map((s, i) => {
+    const items = prices.filter(p => p.cat === s.name);
+    const min = items.length ? Math.min.apply(null, items.map(p => p.price)) : 0;
+    return "<article class='svc-card reveal' style='--i:" + (i % 3) + "' data-key='" + esc(s.id) + "'>" +
+      "<div class='svc-top'>" + crest(s.id, i) + "<span class='svc-tag'>" + esc(s.tag || ("0" + (i + 1))) + " · " + (KANJI[s.id] || "車") + "</span></div>" +
+      "<h3 class='svc-name'>" + esc(s.name) + "<em>" + (JPSUB[s.id] || "") + "</em></h3>" +
+      "<p class='svc-desc'>" + esc(s.desc) + "</p>" +
+      "<div class='svc-foot'><span class='svc-from'>от<b>" + money(min) + "</b></span>" +
+      "<span class='svc-actions'><button class='btn btn-primary btn-sm' type='button' data-cat='" + esc(s.name) + "'>Записаться</button></span></div></article>";
+  }).join("");
+  observeReveals(grid);
+}
+function catColor(cat){
+  const cats = [];
+  S.catalog.prices.forEach(p => { if (cats.indexOf(p.cat) < 0) cats.push(p.cat); });
+  return CAT_INK[Math.max(0, cats.indexOf(cat)) % CAT_INK.length];
+}
+function renderCats(){
+  const box = byId("priceCats"); if (!box) return;
+  const cats = [];
+  S.catalog.prices.forEach(p => { if (cats.indexOf(p.cat) < 0) cats.push(p.cat); });
+  box.innerHTML = ["all"].concat(cats).map(c =>
+    "<button class='cat" + (S.pcat === c ? " on" : "") + "' type='button' data-pcat='" + esc(c) + "'>" + (c === "all" ? "Все категории" : esc(c)) + "</button>").join("");
+}
+function renderPrices(){
+  const body = byId("priceBody"); if (!body) return;
+  const q = S.pq.trim().toLowerCase();
+  let rows = S.catalog.prices.filter(p =>
+    (S.pcat === "all" || p.cat === S.pcat) && (!q || (p.name + " " + p.cat).toLowerCase().indexOf(q) >= 0));
+  const k = S.psort.key, dir = S.psort.dir;
+  rows = rows.slice().sort((a, b) => {
+    const va = a[k], vb = b[k];
+    if (typeof va === "number") return (va - vb) * dir;
+    return String(va).localeCompare(String(vb), "ru") * dir;
+  });
+  body.innerHTML = rows.length ? rows.map(p => {
+    const c = catColor(p.cat);
+    return "<tr><td class='c-name'>" + esc(p.name) + "</td>" +
+      "<td data-label='Категория'><span class='cat-badge' style='color:" + c + ";border-color:" + c + "55;background:" + c + "14'>" + esc(p.cat) + "</span></td>" +
+      "<td class='c-time' data-label='Время'>" + fmtTime(p.time) + "</td>" +
+      "<td class='c-price' data-label='Цена'>" + money(p.price) + "</td>" +
+      "<td class='c-act'><button class='btn btn-ghost btn-sm' type='button' data-pid='" + p.id + "'>Записаться →</button></td></tr>";
+  }).join("") : "<tr><td colspan='5'><div class='empty'><b>無</b>Ничего не найдено — измените запрос или сбросьте фильтры.</div></td></tr>";
+  const cnt = byId("priceCount");
+  if (cnt) cnt.textContent = "Показано " + rows.length + " из " + S.catalog.prices.length + " позиций";
+  $$("#priceHead th[data-sort]").forEach(th => {
+    const on = th.getAttribute("data-sort") === k;
+    th.classList.toggle("sorted", on);
+    const sp = $("span", th); if (sp) sp.textContent = on ? (dir > 0 ? "▲" : "▼") : "↕";
+  });
+}
+function fillServiceSelect(){
+  const sel = byId("fService"); if (!sel) return;
+  const cats = [];
+  S.catalog.prices.forEach(p => { if (cats.indexOf(p.cat) < 0) cats.push(p.cat); });
+  sel.innerHTML = "<option value=''>— выберите услугу —</option>" + cats.map(c =>
+    "<optgroup label='" + esc(c) + "'>" + S.catalog.prices.filter(p => p.cat === c).map(p =>
+      "<option value='" + p.id + "'>" + esc(p.name) + " · " + money(p.price) + "</option>").join("") + "</optgroup>").join("");
+}
+function renderReviews(){
+  const grid = byId("revGrid"); if (!grid) return;
+  const hues = ["#B3241C", "#1F5B8F", "#7A5210", "#2E7D51", "#9B3A6B", "#3F3AA8"];
+  grid.innerHTML = S.catalog.reviews.map((r, i) => {
+    const st = clamp(Number(r.stars) || 5, 1, 5);
+    const stars = "★".repeat(st) + "☆".repeat(5 - st);
+    const c = hues[i % hues.length];
+    return "<article class='rev-card reveal' style='--i:" + (i % 3) + "'>" +
+      "<div class='rev-stars'>" + stars + "</div><p class='rev-text'>" + esc(r.text) + "</p>" +
+      "<div class='rev-who'><span class='rev-ava' style='background:linear-gradient(150deg," + c + ",#241F2A)'>" + esc(String(r.who || "?").charAt(0)) + "</span>" +
+      "<span class='info'><b>" + esc(r.who) + "</b><span>" + esc(r.car || "") + "</span></span><span class='rev-date'>" + esc(r.date || "") + "</span></div>" +
+      "<span class='rev-stamp'>良</span></article>";
+  }).join("");
+  observeReveals(grid);
+  const bars = byId("revBars");
+  if (bars) {
+    const dist = [92, 6, 2, 0, 0], cols = ["#2E7D51", "#7A9A3F", "#D9A227", "#C4703A", "#B3241C"];
+    bars.innerHTML = dist.map((v, i) =>
+      "<div class='rev-bar'><span>" + (5 - i) + " ★</span><span class='track'><i data-w='" + v + "' style='background:" + cols[i] + "'></i></span><span>" + v + "%</span></div>").join("");
+  }
+}
+function renderStats(){
+  const box = byId("statsRow"); if (!box) return;
+  box.innerHTML = S.catalog.stats.map((s, i) =>
+    "<div class='stat reveal' style='--i:" + i + "' data-kanji='" + esc(s.k || "車") + "'><b><span class='n' data-count='" + (Number(s.n) || 0) + "'>0</span><em>" + esc(s.suffix || "") + "</em></b><span>" + esc(s.l) + "</span></div>").join("");
+  observeReveals(box);
+}
+function renderTicker(){
+  const t = byId("tickerTrack"); if (!t) return;
+  const items = [
+    ["工", "Замена масла — 40 минут"], ["星", "4.9 · 1 240 отзывов"], ["診", "Диагностика 0 ₽ при ремонте"],
+    ["保", "Гарантия 12 месяцев"], ["純", "Оригинальные запчасти"], ["車", "8 подъёмников · посты 01–08"],
+    ["茶", "Кофе и матча — за нами"], ["時", "Ежедневно 08:00 – 22:00"]
+  ];
+  const one = items.map(x => "<span><b>" + x[0] + "</b>" + esc(x[1]) + "</span>").join("");
+  t.innerHTML = one + one;
+}
+
+/* ============================== СЧЁТЧИКИ / НАБЛЮДАТЕЛИ ============================== */
+function countUp(node){
+  const target = Number(node.getAttribute("data-count")) || 0;
+  if (REDUCED) { node.textContent = NF.format(target); return; }
+  const dur = 1400, t0 = performance.now();
+  const tick = now => {
+    const k = clamp((now - t0) / dur, 0, 1);
+    const e = 1 - Math.pow(1 - k, 3);
+    node.textContent = NF.format(Math.round(target * e));
+    if (k < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+function initObservers(){
+  if (!("IntersectionObserver" in window)) {
+    $$(".reveal").forEach(n => n.classList.add("in"));
+    $$("[data-count]").forEach(n => { n.textContent = NF.format(Number(n.getAttribute("data-count")) || 0); });
+    $$(".rev-bar .track i").forEach(b => { b.style.width = b.getAttribute("data-w") + "%"; });
+    return;
+  }
+  revealObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      en.target.classList.add("in");
+      revealObs.unobserve(en.target);
+      $$("[data-count]", en.target).forEach(countUp);
+      $$(".rev-bar .track i", en.target).forEach(bar => { bar.style.width = bar.getAttribute("data-w") + "%"; });
+    });
+  }, { threshold: 0.16, rootMargin: "0px 0px -40px 0px" });
+  observeReveals(document);
+  const revTop = $(".rev-top");
+  if (revTop) revealObs.observe(revTop);
+  navObs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const id = en.target.id;
+      $$(".nav a").forEach(a => a.classList.toggle("active", a.getAttribute("data-nav") === id));
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  ["services", "prices", "booking", "reviews", "contacts"].forEach(id => { const n = byId(id); if (n) navObs.observe(n); });
+}
+
+/* ============================== ЗАПИСЬ ============================== */
+function setErr(field, msg){
+  const wrap = byId("f" + field);
+  const box = byId("e" + field);
+  if (wrap && wrap.parentNode) wrap.parentNode.classList.toggle("bad", !!msg);
+  if (box) { box.textContent = msg || ""; box.style.color = ""; }
+}
+function updateEstimate(){
+  const sel = byId("fService");
+  const id = sel ? Number(sel.value) : 0;
+  const p = S.catalog.prices.filter(x => x.id === id)[0];
+  byId("estSvc").textContent = p ? p.name : "—";
+  byId("estTime").textContent = p ? fmtTime(p.time) : "—";
+  const d = byId("fDate").value;
+  byId("estWhen").textContent = d ? ruLong(d) + (S.selSlot ? ", " + S.selSlot : "") : "—";
+  const total = byId("estTotal");
+  const next = p ? p.price : 0;
+  const prev = Number(total.getAttribute("data-v")) || 0;
+  total.setAttribute("data-v", String(next));
+  if (REDUCED || prev === next) { total.textContent = money(next); return; }
+  const t0 = performance.now(), dur = 450;
+  const tick = now => {
+    const k = clamp((now - t0) / dur, 0, 1);
+    total.textContent = money(prev + (next - prev) * (1 - Math.pow(1 - k, 3)));
+    if (k < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+async function renderSlots(){
+  const box = byId("slotBox"); if (!box) return;
+  const date = byId("fDate").value;
+  S.selSlot = "";
+  if (!date) { box.innerHTML = "<span class='hint'>сначала выберите дату…</span>"; updateEstimate(); return; }
+  box.innerHTML = SLOT_TIMES.map(() => "<div class='sk'></div>").join("");
+  let busy = [];
+  try {
+    const r = await Api.call("GET", "/api/slots?date=" + encodeURIComponent(date));
+    busy = r.busy || [];
+    S.slots = { date: date, times: r.times || SLOT_TIMES, busy: busy };
+  } catch (e) {
+    busy = [];
+    S.slots = { date: date, times: SLOT_TIMES, busy: [] };
+  }
+  if (byId("fDate").value !== date) return;
+  box.innerHTML = (S.slots.times || SLOT_TIMES).map(t => {
+    const b = busy.indexOf(t) >= 0;
+    return "<button type='button' class='slot' data-t='" + t + "'" + (b ? " disabled aria-label='занято'" : "") + ">" + t + "</button>";
+  }).join("");
+  updateEstimate();
+}
+function pickSlot(btn){
+  $$(".slot", byId("slotBox")).forEach(x => x.classList.remove("sel"));
+  btn.classList.add("sel");
+  S.selSlot = btn.getAttribute("data-t");
+  setErr("Slot", "");
+  const e = byId("eSlot"); if (e) { e.textContent = "✓ Время выбрано"; e.style.color = "#B6E9C9"; }
+  Sound.click();
+  updateEstimate();
+}
+function bookPayload(){
+  return {
+    name: byId("fName").value, phone: byId("fPhone").value, car: byId("fCar").value, plate: byId("fPlate").value,
+    serviceId: Number(byId("fService").value), date: byId("fDate").value, slot: S.selSlot,
+    comment: byId("fComment").value, email: S.user ? S.user.email : ""
+  };
+}
+function paintErrors(errors){
+  const map = { name: "Name", phone: "Phone", car: "Car", plate: "Plate", serviceId: "Service", date: "Date", slot: "Slot" };
+  Object.keys(map).forEach(k => setErr(map[k], errors[k] || ""));
+}
+async function submitBooking(ev){
+  ev.preventDefault();
+  const payload = bookPayload();
+  const v = validateOrder(payload, S.catalog.prices);
+  paintErrors(v.errors);
+  if (Object.keys(v.errors).length) {
+    Sound.err();
+    const first = $("#bookForm .field.bad .inp");
+    if (first) first.focus();
+    toast("Проверьте отмеченные поля формы", "bad");
+    return;
+  }
+  const btn = byId("bookSubmit");
+  btn.disabled = true;
+  const old = btn.innerHTML;
+  btn.innerHTML = "Отправляем…";
+  try {
+    const r = await Api.call("POST", "/api/orders", payload);
+    Sound.taiko(); Sound.ok();
+    const h = byId("hanko");
+    if (h) { h.classList.remove("stamp"); void h.offsetWidth; h.classList.add("stamp"); }
+    toast("Заявка №" + r.order.id + " создана. Перезвоним в течение 15 минут.", "good",
+      S.user ? { label: "Открыть", run: () => openOrder(r.order.id) } : null);
+    byId("bookForm").reset();
+    S.selSlot = "";
+    byId("cCount").textContent = "0 / 400";
+    paintErrors({});
+    byId("slotBox").innerHTML = "<span class='hint'>сначала выберите дату…</span>";
+    if (S.user) { byId("fName").value = S.user.name; byId("fPhone").value = maskPhone(S.user.phone); }
+    updateEstimate();
+    if (S.user) { await refreshOrders(); renderCab(); }
+    setTimeout(() => closeOverlay(byId("bookOverlay")), 900);
+  } catch (e) {
+    Sound.err();
+    if (e.fields) paintErrors(e.fields);
+    toast(e.message || "Не удалось создать заявку", "bad");
+    if (e.status === 409) renderSlots();
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = old;
+  }
+}
+function openBooking(){
+  openOverlay(byId("bookOverlay"));
+  Sound.open();
+  setTimeout(() => { const n = byId("fName"); if (n) n.focus({ preventScroll: true }); }, REDUCED ? 0 : 260);
+}
+function gotoBooking(priceId){
+  const sel = byId("fService");
+  if (sel && priceId) { sel.value = String(priceId); updateEstimate(); }
+  openBooking();
+}
+
+/* ============================== КАБИНЕТ ============================== */
+async function refreshOrders(){
+  if (!S.user) { S.orders = []; return; }
+  const r = await Api.call("GET", "/api/orders");
+  S.orders = r.orders || [];
+}
+function visibleOrders(){
+  const q = S.cq.trim().toLowerCase();
+  let list = S.orders.filter(o => {
+    if (S.cstatus !== "all" && o.status !== S.cstatus) return false;
+    if (!q) return true;
+    return (String(o.id) + " " + o.name + " " + o.car + " " + (o.plate || "") + " " + o.svc + " " + (o.phone || "")).toLowerCase().indexOf(q) >= 0;
+  });
+  list = list.slice().sort((a, b) => {
+    if (S.csort === "old") return String(a.created).localeCompare(String(b.created));
+    if (S.csort === "price") return (b.price || 0) - (a.price || 0);
+    return String(b.created).localeCompare(String(a.created));
+  });
+  return list;
+}
+function orderCard(o){
+  const admin = S.user && S.user.role === "admin";
+  const idx = FLOW.indexOf(o.status);
+  const rail = FLOW.map((f, i) => "<i class='" + (o.status !== "cancel" && idx >= i ? "on" : "") + "'></i>").join("");
+  return "<article class='o-card" + (S.sel.has(o.id) ? " sel" : "") + "' data-id='" + o.id + "'>" +
+    "<div class='o-top'>" + (admin ? "<input class='o-check' type='checkbox' data-check='" + o.id + "'" + (S.sel.has(o.id) ? " checked" : "") + " aria-label='Выбрать наряд " + o.id + "'>" : "") +
+    "<span class='o-id'>№" + o.id + "</span>" + stHtml(o.status) + (o.post ? "<span class='tiny'>пост №" + esc(o.post) + "</span>" : "") + "</div>" +
+    "<div class='o-svc'>" + esc(o.svc) + "</div>" +
+    "<div class='o-meta'><span>" + esc(o.car) + (o.plate ? " <b class='plate'>" + esc(o.plate) + "</b>" : "") + "</span>" +
+    "<span>" + ruDate(o.date) + " · <b>" + esc(o.slot) + "</b></span>" + (admin ? "<span>" + esc(o.name) + "</span>" : "") + "</div>" +
+    "<div class='o-rail'>" + rail + "</div>" +
+    "<div class='o-foot'><span class='o-price'>" + money(o.price) + "</span>" +
+    (admin && idx >= 0 && idx < FLOW.length - 1 ? "<button class='btn btn-ghost btn-sm' type='button' data-adv='" + o.id + "'>" + ST[FLOW[idx + 1]].l + " →</button>" : "") +
+    "<button class='btn btn-primary btn-sm' type='button' data-open='" + o.id + "'>Детали</button></div></article>";
+}
+function renderCab(){
+  const list = byId("cabList"); if (!list) return;
+  const rows = visibleOrders();
+  list.innerHTML = rows.length ? rows.map(orderCard).join("") :
+    "<div class='o-empty'><b>空</b>" + (S.orders.length ? "Под фильтр ничего не подходит." : "Заявок пока нет — создайте первую.") + "</div>";
+  const chips = byId("cabChips");
+  if (chips) {
+    const counts = { all: S.orders.length };
+    Object.keys(ST).forEach(k => { counts[k] = S.orders.filter(o => o.status === k).length; });
+    chips.innerHTML = ["all"].concat(Object.keys(ST)).map(k =>
+      "<button class='fchip" + (S.cstatus === k ? " on" : "") + "' type='button' data-cstatus='" + k + "'>" +
+      (k === "all" ? "Все статусы" : ST[k].l) + " <u>" + counts[k] + "</u></button>").join("");
+  }
+  const sum = byId("cabSummary");
+  if (sum) {
+    const active = S.orders.filter(o => o.status === "new" || o.status === "confirm" || o.status === "work").length;
+    const total = S.orders.reduce((a, o) => a + (o.price || 0), 0);
+    sum.innerHTML = "<span>всего <b>" + S.orders.length + "</b></span><span>в работе <b>" + active + "</b></span>" +
+      "<span>сумма <b>" + money(total) + "</b></span><span>показано <b>" + rows.length + "</b></span>";
+  }
+  const bar = byId("bulkBar");
+  if (bar) {
+    bar.classList.toggle("on", S.sel.size > 0);
+    const c = byId("bulkCount"); if (c) c.textContent = "Выбрано: " + S.sel.size;
+  }
+}
+function paintSession(){
+  const label = byId("cabLabel");
+  if (label) label.textContent = S.user ? S.user.name.split(" ")[0] : "Кабинет";
+  const u = byId("cabUser");
+  if (u) {
+    u.innerHTML = S.user
+      ? "<span class='ava'>" + (S.user.role === "admin" ? "管" : "客") + "</span><span class='info'><b>" + esc(S.user.name) + "</b><span>" + esc(S.user.email) + "</span></span>" +
+        "<span class='role" + (S.user.role === "admin" ? " admin" : "") + "'>" + (S.user.role === "admin" ? "管理人 · админ" : "客 · клиент") + "</span>"
+      : "";
+  }
+  const cabNew = byId("cabNew"), logout = byId("logoutBtn");
+  if (cabNew) cabNew.style.display = S.user ? "" : "none";
+  if (logout) logout.style.display = S.user ? "" : "none";
+}
+async function openCabinet(){
+  if (!S.user) { openAuth("login"); return; }
+  byId("cabinet").classList.add("open");
+  byId("cabScrim").classList.add("on");
+  document.body.classList.add("lock");
+  Sound.open();
+  byId("cabList").innerHTML = "<div class='o-empty'>Читаю заказ-наряды из базы…</div>";
+  try { await refreshOrders(); } catch (e) { toast(e.message, "bad"); }
+  renderCab();
+}
+function closeCabinet(){
+  byId("cabinet").classList.remove("open");
+  byId("cabScrim").classList.remove("on");
+  if (!openStack.length) document.body.classList.remove("lock");
+  Sound.close();
+}
+function mergeOrder(o){
+  if (!o) return;
+  let found = false;
+  S.orders = S.orders.map(x => { if (x.id === o.id) { found = true; return o; } return x; });
+  if (!found) S.orders.unshift(o);
+  if (S.detail && S.detail.id === o.id) S.detail = o;
+}
+async function advStatus(id){
+  try {
+    const r = await Api.call("POST", "/api/orders/" + id + "/advance");
+    mergeOrder(r.order);
+    Sound.step();
+    renderCab();
+    toast("Наряд №" + id + ": " + (ST[r.order.status] || ST.new).l, "good");
+    if (S.detail && S.detail.id === id) renderOrder(r.order, S.canManage);
+  } catch (e) { Sound.err(); toast(e.message, "bad"); }
+}
+async function cancelOrder(id){
+  try {
+    const r = await Api.call("POST", "/api/orders/" + id + "/cancel");
+    mergeOrder(r.order);
+    renderCab();
+    Sound.err();
+    if (S.detail && S.detail.id === id) renderOrder(r.order, S.canManage);
+    toast("Заявка №" + id + " отменена", "warn", { label: "Вернуть", run: async () => {
+      const back = await Api.call("POST", "/api/orders/" + id + "/uncancel", { status: r.previous });
+      mergeOrder(back.order); renderCab(); Sound.ok();
+      if (S.detail && S.detail.id === id) renderOrder(back.order, S.canManage);
+      toast("Заявка №" + id + " восстановлена", "good");
+    } });
+  } catch (e) { Sound.err(); toast(e.message, "bad"); }
+}
+async function delOrder(id){
+  try {
+    const d = await Api.call("GET", "/api/orders/" + id);
+    const snapshot = d.order;
+    await Api.call("DELETE", "/api/orders/" + id);
+    S.orders = S.orders.filter(o => o.id !== id);
+    S.sel.delete(id);
+    renderCab();
+    if (S.detail && S.detail.id === id) { S.detail = null; closeOverlay(byId("orderOverlay")); }
+    Sound.err();
+    toast("Заказ-наряд №" + id + " удалён", "bad", { label: "Вернуть", run: async () => {
+      const r = await Api.call("POST", "/api/orders/" + id + "/restore", snapshot);
+      mergeOrder(r.order); renderCab(); Sound.ok();
+      toast("Наряд №" + id + " восстановлен", "good");
+    } });
+  } catch (e) { Sound.err(); toast(e.message, "bad"); }
+}
+async function bulkAction(kind){
+  const ids = Array.from(S.sel);
+  if (!ids.length) return;
+  const removed = [], prev = {};
+  let ok = 0;
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    try {
+      if (kind === "delete") {
+        const d = await Api.call("GET", "/api/orders/" + id);
+        await Api.call("DELETE", "/api/orders/" + id);
+        removed.push(d.order);
+      } else if (kind === "cancel") {
+        const o = S.orders.filter(x => x.id === id)[0];
+        prev[id] = o ? o.status : "new";
+        await Api.call("POST", "/api/orders/" + id + "/cancel");
+      } else {
+        await Api.call("PATCH", "/api/orders/" + id + "/status", { status: kind });
+      }
+      ok++;
+    } catch (e) { /* недоступные наряды пропускаем */ }
+  }
+  S.sel.clear();
+  await refreshOrders().catch(() => {});
+  renderCab();
+  if (!ok) { Sound.err(); toast("Не удалось изменить выбранные наряды", "bad"); return; }
+  Sound.step();
+  if (kind === "delete") {
+    toast("Удалено нарядов: " + ok, "bad", { label: "Вернуть все", run: async () => {
+      for (let i = 0; i < removed.length; i++) await Api.call("POST", "/api/orders/" + removed[i].id + "/restore", removed[i]);
+      await refreshOrders(); renderCab(); Sound.ok(); toast("Восстановлено: " + removed.length, "good");
+    } });
+  } else if (kind === "cancel") {
+    toast("Отменено заявок: " + ok, "warn", { label: "Вернуть все", run: async () => {
+      const keys = Object.keys(prev);
+      for (let i = 0; i < keys.length; i++) await Api.call("POST", "/api/orders/" + keys[i] + "/uncancel", { status: prev[keys[i]] });
+      await refreshOrders(); renderCab(); Sound.ok(); toast("Заявки восстановлены", "good");
+    } });
+  } else {
+    toast("Статус «" + ST[kind].l + "» применён к " + ok + " нарядам", "good");
+  }
+}
+
+/* ============================== ЗАКАЗ-НАРЯД ============================== */
+function openOverlay(node){
+  if (!node) return;
+  node.classList.add("open");
+  document.body.classList.add("lock");
+  if (openStack.indexOf(node) < 0) openStack.push(node);
+}
+function closeOverlay(node){
+  if (!node) return;
+  node.classList.remove("open");
+  openStack = openStack.filter(n => n !== node);
+  if (!openStack.length && !byId("cabinet").classList.contains("open")) document.body.classList.remove("lock");
+  Sound.close();
+}
+async function openOrder(id){
+  openOverlay(byId("orderOverlay"));
+  byId("odTitle").textContent = "Заказ-наряд №" + id;
+  byId("odBody").innerHTML = "<div class='o-empty'>Открываю наряд…</div>";
+  Sound.open();
+  try {
+    const d = await Api.call("GET", "/api/orders/" + id);
+    S.detail = d.order; S.canManage = !!d.canManage; S.pending = [];
+    renderOrder(d.order, S.canManage);
+  } catch (e) {
+    byId("odBody").innerHTML = "<div class='o-empty'><b>誤</b>" + esc(e.message) + "</div>";
+  }
+}
+function renderOrder(o, canManage){
+  S.detail = o;
+  byId("odTitle").textContent = "Заказ-наряд №" + o.id;
+  const idx = FLOW.indexOf(o.status);
+  const steps = FLOW.map((f, i) => {
+    const cls = o.status === "cancel" ? "" : (i < idx ? "past" : i === idx ? "on" : "");
+    return "<div class='od-step " + cls + "'><b>" + ST[f].j + "</b>" + ST[f].l + "</div>";
+  }).join("");
+  const photos = (o.photos || []);
+  const grid = photos.length ? "<div class='photos'>" + photos.map((p, i) =>
+    "<figure class='ph' data-photo='" + i + "'><img src='" + esc(photoUrl(p)) + "' alt='" + esc(p.caption || "фото") + "' loading='lazy' data-fb='" + i + "'>" +
+    (canManage ? "<button class='del' type='button' data-phdel='" + p.id + "' title='Удалить фото'>✕</button>" : "") +
+    "<figcaption>" + esc(p.caption || p.file) + "</figcaption></figure>").join("") + "</div>"
+    : "<div class='o-empty' style='padding:22px'><b>写</b>Фотоотчёт пуст — мастер загрузит кадры, и они появятся здесь.</div>";
+  const upload = canManage ? "<div class='drop' id='odDrop'><p>Перетащите фото сюда или выберите файлы · JPG, PNG, WEBP, SVG</p>" +
+    "<div class='row'><input class='inp' id='odCaption' placeholder='Подпись к фото' style='max-width:230px'>" +
+    "<label class='btn btn-ghost btn-sm' for='odFile'>＋ Фото</label>" +
+    "<input type='file' id='odFile' accept='image/png,image/jpeg,image/webp,image/gif,image/svg+xml' multiple hidden>" +
+    "<button class='btn btn-primary btn-sm' type='button' data-act='upload' id='odUpBtn'>Загрузить</button>" +
+    "<span class='tiny' id='odFileName'>файл не выбран</span></div></div>" : "";
+  const admin = canManage ? "<div class='od-sec'><h4><i>管</i>Управление нарядом</h4>" +
+    "<div class='tool-row'><select class='mini-select' id='odStatus'>" + Object.keys(ST).map(k =>
+      "<option value='" + k + "'" + (k === o.status ? " selected" : "") + ">" + ST[k].l + "</option>").join("") + "</select>" +
+    (idx >= 0 && idx < FLOW.length - 1 ? "<button class='btn btn-gold btn-sm' type='button' data-act='advance'>Следующий этап →</button>" : "") +
+    (o.status !== "cancel" && o.status !== "done" ? "<button class='btn btn-ghost btn-sm' type='button' data-act='cancel'>Отменить</button>" : "") +
+    (o.status === "cancel" ? "<button class='btn btn-ghost btn-sm' type='button' data-act='uncancel'>Восстановить</button>" : "") +
+    "<button class='btn btn-danger btn-sm' type='button' data-act='delete'>Удалить наряд</button></div></div>" : "";
+  const client = (!canManage && (o.status === "new" || o.status === "confirm")) ?
+    "<div class='od-actions'><button class='btn btn-danger btn-sm' type='button' data-act='cancel'>Отменить заявку</button></div>" :
+    (!canManage && o.status === "cancel" ? "<div class='od-actions'><button class='btn btn-ghost btn-sm' type='button' data-act='uncancel'>Вернуть заявку</button></div>" : "");
+  const log = (o.log || []).map(l => "<div class='tl'><span>" + esc(l[0]) + "</span><b>" + esc(l[1]) + "</b></div>").join("");
+  byId("odBody").innerHTML =
+    (o.status === "cancel" ? "<div class='cancel-banner'><span>止</span>Заявка отменена — пост освобождён.</div>" : "") +
+    "<div style='display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px'><b style='font-size:17px;color:#FFF3E2'>" + esc(o.svc) + "</b>" + stHtml(o.status) + "</div>" +
+    "<div class='od-steps'>" + steps + "</div>" +
+    "<div class='od-grid'>" +
+    "<div class='od-f'><span>Клиент</span><b>" + esc(o.name) + "</b></div>" +
+    "<div class='od-f'><span>Телефон</span><b><a href='tel:" + esc(String(o.phone || "").replace(/[^\d+]/g, "")) + "'>" + esc(o.phone || "—") + "</a></b></div>" +
+    "<div class='od-f'><span>Автомобиль</span><b>" + esc(o.car || "—") + "</b></div>" +
+    "<div class='od-f'><span>Госномер</span><b>" + (o.plate ? "<span class='plate'>" + esc(o.plate) + "</span>" : "—") + "</b></div>" +
+    "<div class='od-f'><span>Дата и время</span><b>" + ruDate(o.date) + " · " + esc(o.slot) + "</b></div>" +
+    "<div class='od-f'><span>Нормо-время</span><b>" + fmtTime(o.time) + "</b></div>" +
+    "<div class='od-f'><span>Стоимость работы</span><b style='color:#E8C36B'>" + money(o.price) + "</b></div>" +
+    "<div class='od-f'><span>Пост</span><b>" + (o.post ? "№" + esc(o.post) : "не назначен") + "</b></div>" +
+    (o.email ? "<div class='od-f full'><span>Email</span><b>" + esc(o.email) + "</b></div>" : "") +
+    (o.comment ? "<div class='od-f full'><span>Комментарий</span><b>" + esc(o.comment) + "</b></div>" : "") +
+    "</div>" + admin +
+    "<div class='od-sec'><h4><i>写</i>Фотоотчёт [" + photos.length + "]</h4>" + grid + upload + "</div>" +
+    "<div class='od-sec'><h4><i>歴</i>История наряда</h4><div class='timeline'>" + log + "</div></div>" + client;
+  $$("#odBody img[data-fb]").forEach(img => {
+    img.addEventListener("error", function onerr(){
+      img.removeEventListener("error", onerr);
+      const i = Number(img.getAttribute("data-fb"));
+      img.src = photoFallback((o.photos || [])[i]);
+    });
+  });
+}
+function fileToDataUrl(file){
+  return new Promise((resolve, reject) => {
+    const fr = new FileReader();
+    fr.onerror = () => reject(new Error("Не удалось прочитать файл"));
+    fr.onload = () => {
+      const raw = String(fr.result || "");
+      if (file.type === "image/svg+xml" || file.type === "image/gif") { resolve(raw); return; }
+      const img = new Image();
+      img.onload = () => {
+        const max = 1400;
+        const scale = Math.min(1, max / Math.max(img.width, img.height));
+        const cv = document.createElement("canvas");
+        cv.width = Math.max(1, Math.round(img.width * scale));
+        cv.height = Math.max(1, Math.round(img.height * scale));
+        const cx = cv.getContext("2d");
+        cx.drawImage(img, 0, 0, cv.width, cv.height);
+        try { resolve(cv.toDataURL("image/jpeg", 0.82)); } catch (e) { resolve(raw); }
+      };
+      img.onerror = () => resolve(raw);
+      img.src = raw;
+    };
+    fr.readAsDataURL(file);
+  });
+}
+async function uploadPhotos(files){
+  const o = S.detail;
+  if (!o || !files || !files.length) { toast("Сначала выберите файл", "warn"); return; }
+  const capEl = byId("odCaption");
+  const caption = capEl ? capEl.value.trim() : "";
+  const btn = byId("odUpBtn");
+  if (btn) { btn.disabled = true; btn.textContent = "Загрузка…"; }
+  let ok = 0;
+  for (let i = 0; i < files.length; i++) {
+    try {
+      const dataUrl = await fileToDataUrl(files[i]);
+      await Api.call("POST", "/api/orders/" + o.id + "/photos", { dataUrl: dataUrl, caption: caption || files[i].name.replace(/\.[^.]+$/, "") });
+      ok++;
+    } catch (e) { toast(e.message || "Файл не загружен", "bad"); }
+  }
+  if (ok) {
+    Sound.ok();
+    toast("Загружено фото: " + ok, "good");
+    S.pending = [];
+    const d = await Api.call("GET", "/api/orders/" + o.id);
+    S.canManage = !!d.canManage;
+    renderOrder(d.order, S.canManage);
+    await refreshOrders().catch(() => {});
+    renderCab();
+  }
+  const btn2 = byId("odUpBtn");
+  if (btn2) { btn2.disabled = false; btn2.textContent = "Загрузить"; }
+}
+function openLightbox(i){
+  const list = (S.detail && S.detail.photos) || [];
+  if (!list.length) return;
+  S.lb.list = list; S.lb.i = clamp(i, 0, list.length - 1);
+  paintLightbox();
+  byId("lightbox").classList.add("open");
+  document.body.classList.add("lock");
+  Sound.open();
+}
+function paintLightbox(){
+  const p = S.lb.list[S.lb.i];
+  if (!p) return;
+  const img = byId("lbImg");
+  img.onerror = function(){ img.onerror = null; img.src = photoFallback(p); };
+  img.src = photoUrl(p);
+  img.alt = p.caption || "фото";
+  byId("lbCap").textContent = (p.caption || p.file) + "  ·  " + (S.lb.i + 1) + " / " + S.lb.list.length;
+}
+function closeLightbox(){
+  byId("lightbox").classList.remove("open");
+  if (!openStack.length && !byId("cabinet").classList.contains("open")) document.body.classList.remove("lock");
+  Sound.close();
+}
+function lbMove(d){
+  if (!S.lb.list.length) return;
+  S.lb.i = (S.lb.i + d + S.lb.list.length) % S.lb.list.length;
+  paintLightbox();
+  Sound.click();
+}
+
+/* ============================== АВТОРИЗАЦИЯ ============================== */
+function openAuth(tab){
+  openOverlay(byId("authOverlay"));
+  setAuthTab(tab || "login");
+  Sound.open();
+  setTimeout(() => { const f = byId(tab === "reg" ? "rName" : "lEmail"); if (f) f.focus(); }, 80);
+}
+function setAuthTab(tab){
+  const login = tab !== "reg";
+  byId("tabLogin").classList.toggle("on", login);
+  byId("tabReg").classList.toggle("on", !login);
+  byId("loginForm").style.display = login ? "" : "none";
+  byId("regForm").style.display = login ? "none" : "";
+}
+function authMsg(which, text, good){
+  const box = byId(which);
+  if (!box) return;
+  box.textContent = text || "";
+  box.className = "form-msg" + (text ? " on " + (good ? "good" : "bad") : "");
+}
+async function afterAuth(data){
+  Api.token = data.token;
+  store.set("g77_token", data.token);
+  S.user = data.user;
+  paintSession();
+  closeOverlay(byId("authOverlay"));
+  Sound.ok();
+  toast("Вход выполнен: " + data.user.name, "good");
+  if (!byId("fName").value) byId("fName").value = data.user.name;
+  if (!byId("fPhone").value) byId("fPhone").value = maskPhone(data.user.phone);
+  await openCabinet();
+}
+async function doLogin(ev){
+  ev.preventDefault();
+  const email = byId("lEmail").value.trim(), pass = byId("lPass").value;
+  byId("eLEmail").textContent = validEmail(email) ? "" : "Некорректный email";
+  byId("eLPass").textContent = pass.length >= 6 ? "" : "Минимум 6 символов";
+  if (!validEmail(email) || pass.length < 6) { Sound.err(); return; }
+  authMsg("loginMsg", "");
+  const btn = byId("loginBtn");
+  btn.disabled = true;
+  try {
+    const data = await Api.call("POST", "/api/auth/login", { email: email, pass: pass });
+    await afterAuth(data);
+  } catch (e) { Sound.err(); authMsg("loginMsg", e.message); }
+  finally { btn.disabled = false; }
+}
+async function doRegister(ev){
+  ev.preventDefault();
+  const name = byId("rName").value.trim(), phone = byId("rPhone").value, email = byId("rEmail").value.trim(), pass = byId("rPass").value;
+  byId("eRName").textContent = validName(name) ? "" : "Укажите имя (минимум 2 буквы)";
+  byId("eRPhone").textContent = validPhone(phone) ? "" : "Телефон должен содержать 11 цифр";
+  byId("eREmail").textContent = validEmail(email) ? "" : "Некорректный email";
+  byId("eRPass").textContent = pass.length >= 6 ? "" : "Пароль минимум 6 символов";
+  if (!validName(name) || !validPhone(phone) || !validEmail(email) || pass.length < 6) { Sound.err(); return; }
+  authMsg("regMsg", "");
+  const btn = byId("regBtn");
+  btn.disabled = true;
+  try {
+    const data = await Api.call("POST", "/api/auth/register", { name: name, phone: "+" + phoneDigits(phone), email: email, pass: pass });
+    await afterAuth(data);
+  } catch (e) { Sound.err(); authMsg("regMsg", e.message); }
+  finally { btn.disabled = false; }
+}
+async function doLogout(){
+  try { await Api.call("POST", "/api/auth/logout"); } catch (e) {}
+  Api.token = "";
+  store.del("g77_token");
+  S.user = null; S.orders = []; S.sel.clear();
+  paintSession(); renderCab(); closeCabinet();
+  toast("Вы вышли из кабинета", "info");
+}
+
+/* ============================== ЖИВЫЕ ЭЛЕМЕНТЫ ============================== */
+const LIVE_LINES = [
+  "✓ Диагностика завершена · BMW 3 · пост №4 · только что",
+  "⚙ Замена масла — 40 минут · пост №2 · мастер Кэндзи",
+  "◈ Развал-схождение 3D · пост №6 · калибровка стенда",
+  "⚡ Поиск утечки тока · тепловизор · пост №1",
+  "★ 4.9 · 1 240 отзывов за год · спасибо за доверие",
+  "刀 Кузовной цех · покраска в камере · пост №8"
+];
+function initLive(){
+  const line = byId("liveLine"), bar = byId("liveBar");
+  if (!line) return;
+  let i = 0;
+  const tick = () => {
+    if (document.hidden) return;
+    i = (i + 1) % LIVE_LINES.length;
+    line.style.opacity = "0";
+    setTimeout(() => { line.textContent = LIVE_LINES[i]; line.style.opacity = "1"; }, 320);
+    if (bar) bar.style.width = (28 + ((i * 17) % 66)) + "%";
+  };
+  line.textContent = LIVE_LINES[0];
+  if (bar) bar.style.width = "42%";
+  setInterval(tick, 4200);
+}
+async function initOpenPill(){
+  const pill = byId("openPill"); if (!pill) return;
+  const h = new Date().getHours();
+  const open = h >= 8 && h < 22;
+  let free = 0;
+  try {
+    const r = await Api.call("GET", "/api/slots?date=" + todayStr());
+    free = (r.times || SLOT_TIMES).length - (r.busy || []).length;
+  } catch (e) { free = 0; }
+  pill.classList.toggle("closed", !open);
+  pill.innerHTML = "<i class='dot " + (open ? "live" : "warn") + "'></i><span>" +
+    (open ? "Открыто · свободно " + free + " слотов сегодня" : "Закрыто · онлайн-запись на завтра открыта") + "</span>";
+}
+function initScrollFx(){
+  const hdr = byId("hdr"), art = $(".hero-art");
+  let ticking = false;
+  const paint = () => {
+    const y = window.scrollY || window.pageYOffset || 0;
+    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    hdr.style.setProperty("--progress", (clamp(y / max, 0, 1) * 100).toFixed(2) + "%");
+    hdr.classList.toggle("stuck", y > 24);
+    if (art && !REDUCED && y < window.innerHeight * 1.4) art.style.transform = "translate3d(0," + (y * 0.055).toFixed(1) + "px,0)";
+    ticking = false;
+  };
+  window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(paint); } }, { passive: true });
+  paint();
+}
+function initMobileMenu(){
+  const burger = byId("burger"), menu = byId("mmenu");
+  burger.addEventListener("click", () => {
+    const on = menu.classList.toggle("open");
+    burger.classList.toggle("on", on);
+    burger.setAttribute("aria-expanded", on ? "true" : "false");
+    Sound.click();
+  });
+  $$("a", menu).forEach(a => a.addEventListener("click", () => {
+    menu.classList.remove("open"); burger.classList.remove("on");
+  }));
+}
+
+/* ============================== СОБЫТИЯ ============================== */
+function bindMasked(el, masker){
+  let prevDigits = "";
+  el.addEventListener("input", ev => {
+    const raw = el.value;
+    const isDel = ev.inputType && ev.inputType.indexOf("delete") === 0;
+    let value = raw;
+    if (isDel) {
+      const nowDigits = raw.replace(/\D/g, "");
+      if (nowDigits.length >= prevDigits.length && prevDigits.length > 0) value = raw.replace(/\d(?=\D*$)/, "");
+    }
+    const formatted = masker(value);
+    const atEnd = el.selectionStart === raw.length;
+    el.value = formatted;
+    prevDigits = formatted.replace(/\D/g, "");
+    if (atEnd && el.setSelectionRange) { const p = formatted.length; try { el.setSelectionRange(p, p); } catch (e) {} }
+  });
+}
+function initEvents(){
+  byId("sndBtn").addEventListener("click", () => {
+    Sound.on = !Sound.on;
+    store.set("g77_sound", Sound.on);
+    paintSound();
+    if (Sound.on) { Sound.ensure(); Sound.ok(); }
+  });
+  document.addEventListener("pointerdown", () => { if (Sound.on) Sound.ensure(); }, { once: true });
+  byId("cabBtn").addEventListener("click", () => { Sound.click(); openCabinet(); });
+  byId("cabMobile").addEventListener("click", () => {
+    byId("mmenu").classList.remove("open"); byId("burger").classList.remove("on"); openCabinet();
+  });
+  initMobileMenu();
+  /* услуги */
+  byId("svcGrid").addEventListener("click", ev => {
+    const cat = ev.target.closest("[data-cat]");
+    if (cat) {
+      const name = cat.getAttribute("data-cat");
+      const first = S.catalog.prices.filter(p => p.cat === name)[0];
+      gotoBooking(first ? first.id : 0);
+    }
+  });
+  byId("svcGrid").addEventListener("pointermove", ev => {
+    const card = ev.target.closest(".svc-card");
+    if (!card) return;
+    const r = card.getBoundingClientRect();
+    card.style.setProperty("--mx", ((ev.clientX - r.left) / r.width * 100).toFixed(1) + "%");
+    card.style.setProperty("--my", ((ev.clientY - r.top) / r.height * 100).toFixed(1) + "%");
+  });
+  /* прайс */
+  byId("priceSearch").addEventListener("input", ev => { S.pq = ev.target.value; renderPrices(); });
+  byId("priceClearQ").addEventListener("click", () => { S.pq = ""; byId("priceSearch").value = ""; renderPrices(); Sound.click(); });
+  byId("priceCats").addEventListener("click", ev => {
+    const b = ev.target.closest("[data-pcat]"); if (!b) return;
+    S.pcat = b.getAttribute("data-pcat"); renderCats(); renderPrices(); Sound.click();
+  });
+  byId("priceReset").addEventListener("click", () => {
+    S.pq = ""; S.pcat = "all"; S.psort = { key: "id", dir: 1 };
+    byId("priceSearch").value = "";
+    renderCats(); renderPrices(); Sound.click();
+  });
+  byId("priceHead").addEventListener("click", ev => {
+    const th = ev.target.closest("th[data-sort]"); if (!th) return;
+    const key = th.getAttribute("data-sort");
+    if (S.psort.key === key) S.psort.dir *= -1; else S.psort = { key: key, dir: 1 };
+    renderPrices(); Sound.click();
+  });
+  byId("priceBody").addEventListener("click", ev => {
+    const b = ev.target.closest("[data-pid]"); if (!b) return;
+    gotoBooking(Number(b.getAttribute("data-pid")));
+  });
+  /* форма записи */
+  bindMasked(byId("fPhone"), maskPhone);
+  bindMasked(byId("rPhone"), maskPhone);
+  const plate = byId("fPlate");
+  plate.addEventListener("input", () => {
+    const atEnd = plate.selectionStart === plate.value.length;
+    plate.value = maskPlate(plate.value);
+    if (atEnd) { const p = plate.value.length; try { plate.setSelectionRange(p, p); } catch (e) {} }
+    if (validPlate(plate.value)) setErr("Plate", "");
+  });
+  [["fName","Name",validName],["fCar","Car",v => String(v).trim().length >= 2]].forEach(pair => {
+    const el = byId(pair[0]);
+    el.addEventListener("input", () => { if (pair[2](el.value)) setErr(pair[1], ""); });
+    el.addEventListener("blur", () => { if (el.value && !pair[2](el.value)) setErr(pair[1], pair[0] === "fName" ? "Укажите имя (минимум 2 буквы)" : "Укажите марку и модель"); });
+  });
+  byId("fPhone").addEventListener("input", () => { if (validPhone(byId("fPhone").value)) setErr("Phone", ""); });
+  byId("fPhone").addEventListener("blur", () => { if (byId("fPhone").value && !validPhone(byId("fPhone").value)) setErr("Phone", "Телефон должен содержать 11 цифр"); });
+  byId("fService").addEventListener("change", () => { setErr("Service", ""); updateEstimate(); Sound.click(); });
+  byId("fDate").addEventListener("change", () => {
+    const v = byId("fDate").value;
+    setErr("Date", !v ? "Выберите дату" : (v < todayStr() ? "Дата в прошлом" : ""));
+    renderSlots();
+  });
+  byId("slotBox").addEventListener("click", ev => {
+    const b = ev.target.closest(".slot"); if (!b || b.disabled) return;
+    pickSlot(b);
+  });
+  byId("fComment").addEventListener("input", ev => { byId("cCount").textContent = ev.target.value.length + " / 400"; });
+  byId("bookForm").addEventListener("submit", submitBooking);
+  /* окно заявки */
+  byId("bookOpen").addEventListener("click", () => gotoBooking(0));
+  byId("bookClose").addEventListener("click", () => closeOverlay(byId("bookOverlay")));
+  byId("bookOverlay").addEventListener("mousedown", ev => { if (ev.target.classList.contains("scrim-in")) closeOverlay(byId("bookOverlay")); });
+  /* кнопки «Записаться» (не пункты меню) открывают окно заявки */
+  $$('a.btn[href="#booking"]').forEach(a => a.addEventListener("click", ev => {
+    ev.preventDefault();
+    const mm = byId("mmenu");
+    if (mm.classList.contains("open")) { mm.classList.remove("open"); byId("burger").classList.remove("on"); }
+    gotoBooking(0);
+  }));
+  /* карта */
+  byId("copyAddr").addEventListener("click", async () => {
+    const text = "ГАРАЖ 77 — г. Ангарск, 96 квартал, 5 д";
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) await navigator.clipboard.writeText(text);
+      else { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); document.body.removeChild(ta); }
+      Sound.ok(); toast("Адрес скопирован: " + text, "good");
+    } catch (e) { toast("Скопируйте вручную: " + text, "warn"); }
+  });
+  /* авторизация */
+  byId("tabLogin").addEventListener("click", () => { setAuthTab("login"); Sound.click(); });
+  byId("tabReg").addEventListener("click", () => { setAuthTab("reg"); Sound.click(); });
+  byId("loginForm").addEventListener("submit", doLogin);
+  byId("regForm").addEventListener("submit", doRegister);
+  byId("authClose").addEventListener("click", () => closeOverlay(byId("authOverlay")));
+  byId("authOverlay").addEventListener("mousedown", ev => { if (ev.target.classList.contains("scrim-in")) closeOverlay(byId("authOverlay")); });
+  byId("demoAdmin").addEventListener("click", () => { byId("lEmail").value = "admin@garage77.ru"; byId("lPass").value = "admin123"; Sound.click(); });
+  byId("demoClient").addEventListener("click", () => { byId("lEmail").value = "ivan@mail.ru"; byId("lPass").value = "client123"; Sound.click(); });
+  /* кабинет */
+  byId("cabClose").addEventListener("click", closeCabinet);
+  byId("cabScrim").addEventListener("click", closeCabinet);
+  byId("logoutBtn").addEventListener("click", doLogout);
+  byId("cabNew").addEventListener("click", () => { closeCabinet(); gotoBooking(0); });
+  byId("cabSearch").addEventListener("input", ev => { S.cq = ev.target.value; renderCab(); });
+  byId("cabSort").addEventListener("change", ev => { S.csort = ev.target.value; renderCab(); Sound.click(); });
+  byId("cabChips").addEventListener("click", ev => {
+    const b = ev.target.closest("[data-cstatus]"); if (!b) return;
+    S.cstatus = b.getAttribute("data-cstatus"); renderCab(); Sound.click();
+  });
+  byId("cabList").addEventListener("click", ev => {
+    const chk = ev.target.closest("[data-check]");
+    if (chk) {
+      const id = Number(chk.getAttribute("data-check"));
+      if (chk.checked) S.sel.add(id); else S.sel.delete(id);
+      renderCab();
+      return;
+    }
+    const adv = ev.target.closest("[data-adv]");
+    if (adv) { advStatus(Number(adv.getAttribute("data-adv"))); return; }
+    const open = ev.target.closest("[data-open]");
+    if (open) { openOrder(Number(open.getAttribute("data-open"))); return; }
+    const card = ev.target.closest(".o-card");
+    if (card) openOrder(Number(card.getAttribute("data-id")));
+  });
+  byId("bulkBar").addEventListener("click", ev => {
+    const b = ev.target.closest("[data-bulk]"); if (!b) return;
+    const kind = b.getAttribute("data-bulk");
+    if (kind === "clear") { S.sel.clear(); renderCab(); return; }
+    bulkAction(kind);
+  });
+  /* заказ-наряд */
+  byId("odClose").addEventListener("click", () => closeOverlay(byId("orderOverlay")));
+  byId("orderOverlay").addEventListener("mousedown", ev => { if (ev.target.classList.contains("scrim-in")) closeOverlay(byId("orderOverlay")); });
+  byId("odBody").addEventListener("click", ev => {
+    const o = S.detail; if (!o) return;
+    const act = ev.target.closest("[data-act]");
+    if (act) {
+      const kind = act.getAttribute("data-act");
+      if (kind === "advance") advStatus(o.id);
+      else if (kind === "cancel") cancelOrder(o.id);
+      else if (kind === "uncancel") {
+        Api.call("POST", "/api/orders/" + o.id + "/uncancel", { status: "new" }).then(r => {
+          mergeOrder(r.order); renderCab(); renderOrder(r.order, S.canManage); Sound.ok(); toast("Заявка возвращена в работу", "good");
+        }).catch(e => { Sound.err(); toast(e.message, "bad"); });
+      }
+      else if (kind === "delete") {
+        if (act.getAttribute("data-armed") === "1") delOrder(o.id);
+        else { act.setAttribute("data-armed", "1"); act.textContent = "Точно удалить?"; setTimeout(() => { if (act.isConnected) { act.setAttribute("data-armed", "0"); act.textContent = "Удалить наряд"; } }, 3200); }
+      }
+      else if (kind === "upload") {
+        const inp = byId("odFile");
+        uploadPhotos(S.pending.length ? S.pending : (inp && inp.files ? Array.prototype.slice.call(inp.files) : []));
+      }
+      return;
+    }
+    const del = ev.target.closest("[data-phdel]");
+    if (del) {
+      const pid = Number(del.getAttribute("data-phdel"));
+      if (del.getAttribute("data-armed") === "1") {
+        Api.call("DELETE", "/api/orders/" + o.id + "/photos/" + pid).then(async () => {
+          Sound.err(); toast("Фото удалено", "warn");
+          const d = await Api.call("GET", "/api/orders/" + o.id);
+          renderOrder(d.order, S.canManage);
+          await refreshOrders().catch(() => {});
+          renderCab();
+        }).catch(e => toast(e.message, "bad"));
+      } else {
+        del.setAttribute("data-armed", "1"); del.textContent = "?";
+        setTimeout(() => { if (del.isConnected) { del.setAttribute("data-armed", "0"); del.textContent = "✕"; } }, 3000);
+      }
+      return;
+    }
+    const ph = ev.target.closest("[data-photo]");
+    if (ph) openLightbox(Number(ph.getAttribute("data-photo")));
+  });
+  byId("odBody").addEventListener("change", ev => {
+    if (ev.target.id === "odStatus") {
+      const value = ev.target.value, o = S.detail;
+      ev.target.disabled = true;
+      Api.call("PATCH", "/api/orders/" + o.id + "/status", { status: value }).then(r => {
+        mergeOrder(r.order); renderCab(); renderOrder(r.order, S.canManage); Sound.step();
+        toast("Статус обновлён: " + ST[value].l, "good");
+      }).catch(e => { Sound.err(); toast(e.message, "bad"); ev.target.disabled = false; });
+    }
+    if (ev.target.id === "odFile") {
+      S.pending = Array.prototype.slice.call(ev.target.files || []);
+      const label = byId("odFileName");
+      if (label) label.textContent = S.pending.length ? (S.pending.length === 1 ? S.pending[0].name : S.pending.length + " файла(ов)") : "файл не выбран";
+    }
+  });
+  byId("odBody").addEventListener("dragover", ev => {
+    const drop = ev.target.closest("#odDrop"); if (!drop) return;
+    ev.preventDefault(); drop.classList.add("over");
+  });
+  byId("odBody").addEventListener("dragleave", ev => {
+    const drop = ev.target.closest("#odDrop"); if (drop) drop.classList.remove("over");
+  });
+  byId("odBody").addEventListener("drop", ev => {
+    const drop = ev.target.closest("#odDrop"); if (!drop) return;
+    ev.preventDefault(); drop.classList.remove("over");
+    const files = ev.dataTransfer && ev.dataTransfer.files ? Array.prototype.slice.call(ev.dataTransfer.files) : [];
+    if (files.length) { S.pending = files; uploadPhotos(files); }
+  });
+  /* лайтбокс */
+  byId("lbClose").addEventListener("click", closeLightbox);
+  byId("lbPrev").addEventListener("click", () => lbMove(-1));
+  byId("lbNext").addEventListener("click", () => lbMove(1));
+  byId("lightbox").addEventListener("click", ev => { if (ev.target.id === "lightbox") closeLightbox(); });
+  /* клавиатура */
+  document.addEventListener("keydown", ev => {
+    if (ev.key === "Escape") {
+      if (byId("lightbox").classList.contains("open")) { closeLightbox(); return; }
+      if (openStack.length) { closeOverlay(openStack[openStack.length - 1]); return; }
+      if (byId("cabinet").classList.contains("open")) { closeCabinet(); return; }
+      if (byId("mmenu").classList.contains("open")) { byId("mmenu").classList.remove("open"); byId("burger").classList.remove("on"); }
+      return;
+    }
+    if (byId("lightbox").classList.contains("open")) {
+      if (ev.key === "ArrowLeft") lbMove(-1);
+      if (ev.key === "ArrowRight") lbMove(1);
+      return;
+    }
+    if (ev.key === "Tab" && openStack.length) {
+      const top = openStack[openStack.length - 1];
+      const items = $$("a[href],button:not([disabled]),input:not([hidden]),select,textarea", top).filter(n => n.offsetParent !== null);
+      if (!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+    }
+  });
+  /* якоря */
+  $$('a[href^="#"]').forEach(a => {
+    a.addEventListener("click", ev => {
+      if (a.classList.contains("btn") && a.getAttribute("href") === "#booking") return;
+      const id = a.getAttribute("href").slice(1);
+      const target = id ? byId(id) : null;
+      if (!target) return;
+      ev.preventDefault();
+      target.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" });
+      Sound.hover();
+    });
+  });
+}
+
+/* ============================== СТАРТ ============================== */
+async function boot(){
+  paintSound(); paintDb(); paintSession();
+  buildScene();
+  initScrollFx();
+  initLive();
+  renderTicker();
+  initEvents();
+  const dateEl = byId("fDate");
+  dateEl.min = todayStr();
+  const max = new Date(); max.setDate(max.getDate() + 60);
+  dateEl.max = max.getFullYear() + "-" + pad2(max.getMonth() + 1) + "-" + pad2(max.getDate());
+  await Api.probe();
+  try {
+    S.catalog = await Api.call("GET", "/api/catalog");
+  } catch (e) {
+    S.catalog = Demo.catalog();
+  }
+  if (!S.catalog || !S.catalog.prices) S.catalog = Demo.catalog();
+  if (!S.catalog.stats || !S.catalog.stats.length) S.catalog.stats = SEED_STATS;
+  S.catalog.stats.forEach((s, i) => { if (!s.k) s.k = SEED_STATS[i] ? SEED_STATS[i].k : "車"; });
+  renderServices(); renderCats(); renderPrices(); fillServiceSelect(); renderReviews(); renderStats();
+  initObservers();
+  updateEstimate();
+  try {
+    const sess = await Api.call("GET", "/api/session");
+    S.user = sess.user || null;
+    if (!S.user) { Api.token = ""; store.del("g77_token"); }
+    if (S.user) await refreshOrders();
+  } catch (e) { S.user = null; }
+  paintSession(); renderCab();
+  initOpenPill();
+  if (Api.mode === "demo") toast("Сервер не запущен — включена встроенная демо-база. Все функции работают локально.", "info");
+}
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+else boot();
+})();
+</script>
+</body>
+</html>
